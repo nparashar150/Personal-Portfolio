@@ -1,13 +1,49 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Sora-Bold;
+  src: url('./font/Sora-Bold.ttf');
+};
+
+@font-face {
+  font-family: Sora-ExtraLight;
+  src: url('./font/Sora-ExtraBold.ttf');
+};
+
+@font-face {
+  font-family: Sora-ExtraLight;
+  src: url('./font/Sora-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: Sora-Light;
+  src: url('./font/Sora-Light.ttf');
+}
+
+@font-face {
+  font-family: Sora-Medium;
+  src: url('./font/Sora-Medium.ttf');
+}
+
+@font-face {
+  font-family: Sora-Regular;
+  src: url('./font/Sora-Regular.ttf');
+}
+
+@font-face {
+  font-family: Sora-SemiBold;
+  src: url('./font/Sora-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Sora-Thin;
+  src: url('./font/Sora-Thin.ttf');
+}
+
+body {
+  background: #02101d;
 }
