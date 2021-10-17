@@ -3,9 +3,9 @@ import Project from "./Project";
 import { ProjectMainWrapper } from "./ProjectElements";
 import ProjectData from "./ProjectData.json";
 import StartMenu from "./ProjectLogo/StartMenu.svg";
-// import AmazonKindle from "./AmazonKindle.svg";
-// import NoteIt from "./Note.it.svg";
-// import ColtEnigma from "./ColtEnigma.png"
+// import AmazonKindle from "./ProjectLogo/AmazonKindle.png";
+// import NoteIt from "./ProjectLogo/NoteIt.png";
+// import ColtEnigma from "./ProjectLogo/ColtEnigma.png"
 
 const ProjectMain = () => {
   let [projectInfo, setProjectInfo] = useState([]);
