@@ -64,9 +64,17 @@ export const EmailComponent = styled.a`
   &:focus::after {
     transform: translate(0px, 0px) rotate(90deg);
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const EmailLine = styled.div`
   border-right: 4px solid ${primary};
   height: 13vh;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;

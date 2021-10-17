@@ -1,44 +1,33 @@
 import React from "react";
-import StartMenu from "./StartMenu.svg";
+
 import {
   ProjectWrapper,
   ProjectPreview,
   ProjectImage,
   ProjectName,
-  ProjectConnect,
   ProjectDetail,
-  ProjectLink,
   ProjectDataDetail,
-} from "./Projectelement";
+} from "./ProjectElements";
 
 const flex = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  width: "100vw",
-  height: "100vh"
-}
+  width: "10vw",
+  height: "40vh",
+};
 
-const Project = () => {
+const Project = (props) => {
   return (
     <>
       <div style={flex}>
-        <ProjectWrapper>
+        <ProjectWrapper target={"_blank"} to={props.to} >
           <ProjectPreview>
-            <ProjectImage src={StartMenu} alt=""></ProjectImage>
-            <ProjectName>Windows 11</ProjectName>
+            <ProjectImage src={props.img} alt=""></ProjectImage>
+            <ProjectName>{props.name}</ProjectName>
           </ProjectPreview>
           <ProjectDetail>
-            <ProjectDataDetail>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book
-            </ProjectDataDetail>
-            <ProjectConnect>
-              <ProjectLink to={{}}></ProjectLink>
-
-              <ProjectLink to={{}}></ProjectLink>
-            </ProjectConnect>
+            <ProjectDataDetail>{props.value}</ProjectDataDetail>
           </ProjectDetail>
         </ProjectWrapper>
       </div>

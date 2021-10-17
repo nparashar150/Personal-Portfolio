@@ -16,7 +16,7 @@ export const NavWrapper = styled.nav`
   width: 6vw;
   position: sticky;
   left: 0;
-  border-right: 4px solid ${secondary};
+  border-right: 2px solid ${secondary};
   z-index: 5;
   transition: 0.375s ease-in-out;
   animation: 2s ${NavAnimation};
@@ -28,6 +28,7 @@ export const NavWrapper = styled.nav`
 
   @media (max-width: 1024px) {
     width: 10vw;
+    background: ${backgroundDark};
 
     &:hover,
     &:focus {
@@ -38,11 +39,30 @@ export const NavWrapper = styled.nav`
   @media (max-width: 768px) {
     width: 100vw;
     height: 100vh;
-
+    border: none;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    padding: 2vh 0vh;
+    overflow: scroll;
     &:hover,
     &:focus {
       width: 100vw;
     }
+  }
+`;
+
+export const NavWrapperMobile = styled.div`
+  display: none;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 9vh;
+  z-index: 10;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 `;
 
@@ -109,7 +129,8 @@ export const NavLinks = styled.div`
     a {
       color: ${hightlightBlue};
     }
-    width: 9.9vw;
+    width: 9.5vw;
+    border-bottom: 0;
     outline: 2px solid ${primary};
   }
   a {
@@ -165,12 +186,12 @@ export const NavSocialIcons = styled.div`
 
   @media (max-width: 768px) {
     width: 49.5vw;
-
     &:hover,
     &:focus {
       width: 99vw;
     }
   }
+
   a {
     text-decoration: none;
     &:hover,
@@ -225,13 +246,13 @@ export const NavImage = styled(Link)`
   }
 
   svg {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     padding: 0.4rem;
 
     @media (max-width: 768px) {
-      width: 15rem;
-      height: 15rem;
+      width: 5rem;
+      height: 5rem;
 
       &:hover,
       &:focus {

@@ -7,9 +7,11 @@ export const MainWrapper = styled.div`
   width: 100vw;
   overflow: hidden;
   height: 100vh;
-
   @media (max-width: 768px) {
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(1, 1fr);
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vh;
+    align-items: flex-start;
+    flex-direction: column;
   }
 `;
