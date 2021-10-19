@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Project from "./Project";
-import { ProjectMainWrapper } from "./ProjectElements";
+import { ProjectMainWrapper, ProjectHeading } from "./ProjectElements";
 import ProjectData from "./ProjectData.json";
-import StartMenu from "./ProjectLogo/StartMenu.svg";
-// import AmazonKindle from "./ProjectLogo/AmazonKindle.png";
-// import NoteIt from "./ProjectLogo/NoteIt.png";
-// import ColtEnigma from "./ProjectLogo/ColtEnigma.png"
 
 const ProjectMain = () => {
   let [projectInfo, setProjectInfo] = useState([]);
@@ -19,12 +15,13 @@ const ProjectMain = () => {
   }, []);
   return (
     <>
+      <ProjectHeading>Projects</ProjectHeading>
       <ProjectMainWrapper>
         {Object.values(projectInfo).map((element) => {
           return (
             <Project
               name={element.name}
-              img={StartMenu}
+              img={element.image}
               value={element.content}
               to={{pathname: element.link}}
             />

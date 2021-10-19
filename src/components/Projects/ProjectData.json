@@ -2,26 +2,26 @@
   "data": {
     "1": {
       "name": "Windows 11",
-      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "image": "",
+      "content": "Microsoft Windows 11 Mobile UI concept using Figma. A prototype on Google Pixel 2.",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/StartMenu.svg?token=APGZX4YIM3NAD45VMAFE3ZLBOV5JG",
       "link": "https://www.instagram.com/p/CSEeej-FXCY/?utm_source=ig_web_copy_link"
     },
     "2": {
       "name": "Kindle Concept",
-      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "image": "",
+      "content": "Amazon Kindle WebApp concept made using React, Express, MongoDb. It uses JWT auth for creating accounts.",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/AmazonKindle.png?token=APGZX44FVUGX6JOKDA37LNLBOV5FM",
       "link": "https://github.com/nparashar150/amazon-kindle-webapp-frontend"
     },
     "3": {
       "name": "ColtOS",
-      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "image": "",
+      "content": "Made website for Opensource Project 'Colt OS' using Vanilla HTML, CSS, JS.",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/ColtEnigma.png?token=APGZX45NOOJGCN7AEJUNXOLBOV5GW",
       "link": "https://colt-enigma.github.io/"
     },
     "4": {
       "name": "Note.it",
-      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "image": "",
+      "content": "Notes App which stores data to LocalStorage and includes Firebase Auth, using HTML, CSS, JS.",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/NoteIt.png?token=APGZX4YCZQDONO3YFWD4ZWTBOV5II",
       "link": "https://msms-224ad.web.app/"
     }
   }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import IsVisible from "react-is-visible";
 import {
   ProjectWrapper,
   ProjectPreview,
@@ -21,7 +21,7 @@ const Project = (props) => {
   return (
     <>
       <div style={flex}>
-        <ProjectWrapper target={"_blank"} to={props.to} >
+        <ProjectWrapper target={"_blank"} to={props.to}>
           <ProjectPreview>
             <ProjectImage src={props.img} alt=""></ProjectImage>
             <ProjectName>{props.name}</ProjectName>

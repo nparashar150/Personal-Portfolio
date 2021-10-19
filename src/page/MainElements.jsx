@@ -5,8 +5,8 @@ export const MainWrapper = styled.div`
   grid-template-columns: 15vw 70vw 15vw;
   grid-template-rows: auto;
   width: 100vw;
-  overflow: hidden;
   height: 100vh;
+  overflow: hidden;
   @media (max-width: 768px) {
     display: flex;
     justify-content: flex-start;

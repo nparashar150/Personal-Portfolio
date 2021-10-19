@@ -7,6 +7,8 @@ import {
   EmailComponent,
   EmailLine,
 } from "../components/Email/Email.jsx";
+import ProjectMain from "../components/Projects/ProjectMain.jsx";
+
 const Main = () => {
   return (
     <>
@@ -23,6 +25,7 @@ const Main = () => {
           ></EmailComponent>
         </EmailWrapper>
       </MainWrapper>
+      <ProjectMain />
     </>
   );
 };

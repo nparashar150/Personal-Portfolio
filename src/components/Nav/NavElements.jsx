@@ -16,7 +16,7 @@ export const NavWrapper = styled.nav`
   width: 6vw;
   position: sticky;
   left: 0;
-  border-right: 2px solid ${secondary};
+  /* border-right: 2px solid ${secondary}; */
   z-index: 5;
   transition: 0.375s ease-in-out;
   animation: 2s ${NavAnimation};
@@ -79,6 +79,8 @@ export const NavElements = styled.div`
   width: 6vw;
   transition: 0.375s ease-in-out;
   animation: 1.375s ${NavAnimation};
+  position: fixed;
+  border-right: 2px solid ${primary};
 
   &:hover,
   &:focus {

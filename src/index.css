@@ -45,5 +45,19 @@
 }
 
 body {
+  overflow-x: hidden;
   background: #02101d;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #02101D;
+}
+::-webkit-scrollbar-thumb {
+  background: #EEE;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64FFDA;
 }

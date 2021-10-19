@@ -1,15 +1,26 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { backgroundDark, primary, secondary } from "../colorScheme";
 import { Link } from "react-router-dom";
+import { fadeIn } from "react-animations";
+const fadeAnimation = keyframes`${fadeIn}`;
 
 export const ProjectMainWrapper = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100vw;
-  height: 100vh
+  width: 85vw;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 768px) {
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: fit-content;
+    justify-content: flex-start;
+  }
 `;
 
 export const ProjectWrapper = styled(Link)`
@@ -21,6 +32,7 @@ export const ProjectWrapper = styled(Link)`
   cursor: pointer;
   position: absolute;
   text-decoration: none;
+  animation: 1.5s ${fadeAnimation};
 
   &:hover,
   &:focus {
@@ -48,6 +60,7 @@ export const ProjectWrapper = styled(Link)`
     background: ${backgroundDark};
   }
 `;
+
 export const ProjectImage = styled.img`
   width: 45px;
   height: 45px;
@@ -108,4 +121,10 @@ export const ProjectPreview = styled.section`
     opacity: 1;
     margin-bottom: 0px;
   }
+`;
+
+export const ProjectHeading = styled.h1`
+  text-align: center;
+  color: ${secondary};
+  font-family: Sora-SemiBold;
 `;
