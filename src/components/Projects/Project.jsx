@@ -1,5 +1,4 @@
 import React from "react";
-import IsVisible from "react-is-visible";
 import {
   ProjectWrapper,
   ProjectPreview,
@@ -8,6 +7,10 @@ import {
   ProjectDetail,
   ProjectDataDetail,
 } from "./ProjectElements";
+import Fade from 'react-reveal/Fade';
+import config from 'react-reveal/globals';
+
+config({ ssrFadeout: true });
 
 const flex = {
   display: "flex",
@@ -20,17 +23,19 @@ const flex = {
 const Project = (props) => {
   return (
     <>
-      <div style={flex}>
-        <ProjectWrapper target={"_blank"} to={props.to}>
-          <ProjectPreview>
-            <ProjectImage src={props.img} alt=""></ProjectImage>
-            <ProjectName>{props.name}</ProjectName>
-          </ProjectPreview>
-          <ProjectDetail>
-            <ProjectDataDetail>{props.value}</ProjectDataDetail>
-          </ProjectDetail>
-        </ProjectWrapper>
-      </div>
+      <Fade right cascade>
+        <div style={flex}>
+          <ProjectWrapper target={"_blank"} to={props.to}>
+            <ProjectPreview>
+              <ProjectImage src={props.img} alt=""></ProjectImage>
+              <ProjectName>{props.name}</ProjectName>
+            </ProjectPreview>
+            <ProjectDetail>
+              <ProjectDataDetail>{props.value}</ProjectDataDetail>
+            </ProjectDetail>
+          </ProjectWrapper>
+        </div>
+      </Fade>
     </>
   );
 };

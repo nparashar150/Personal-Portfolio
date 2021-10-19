@@ -23,7 +23,7 @@ const ProjectMain = () => {
               name={element.name}
               img={element.image}
               value={element.content}
-              to={{pathname: element.link}}
+              to={{ pathname: element.link }}
             />
           );
         })}

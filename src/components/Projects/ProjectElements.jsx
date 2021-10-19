@@ -1,9 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { backgroundDark, primary, secondary } from "../colorScheme";
 import { Link } from "react-router-dom";
-import { fadeIn } from "react-animations";
-const fadeAnimation = keyframes`${fadeIn}`;
-
 export const ProjectMainWrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
@@ -32,7 +29,6 @@ export const ProjectWrapper = styled(Link)`
   cursor: pointer;
   position: absolute;
   text-decoration: none;
-  animation: 1.5s ${fadeAnimation};
 
   &:hover,
   &:focus {
