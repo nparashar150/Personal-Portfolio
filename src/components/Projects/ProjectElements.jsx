@@ -5,12 +5,12 @@ export const ProjectMainWrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
-  width: 85vw;
+  width: 75vw;
   height: 90vh;
   margin-left: auto;
   margin-right: auto;
+  flex-direction: column;
 
   @media (max-width: 768px) {
     flex-wrap: nowrap;
