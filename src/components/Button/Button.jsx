@@ -30,24 +30,24 @@ export const Button = styled(Link)`
     align-items: center;
     padding: 0.5rem;
     position: absolute;
-    border: 4px solid ${primary};
+    border: 2px solid ${primary};
     transition: 0.375s all ease-in-out;
     z-index: 1;
   }
 
   &::before {
     content: "";
-    border: 4px solid ${secondary};
+    border: 2px solid ${secondary};
+    transform: translate(7px, 7px);
   }
   &::after {
     background: ${backgroundDark};
-    transform: translate(-7px, -7px);
     content: "${(props) => props.value}";
   }
 
-  &:hover::after,
-  &:focus::after {
+  &:hover::before,
+  &:focus::before {
     transform: translate(0px, 0px);
-    border: 4px solid ${secondary};
+    border: 2px solid ${secondary};
   }
 `;

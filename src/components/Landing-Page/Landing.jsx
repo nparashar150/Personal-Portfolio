@@ -17,7 +17,7 @@ const Landing = () => {
           <HeadingLarge>I am a Web Developer.</HeadingLarge>
         </Heading>
         <InfoPara>
-          I’m a Front-End Developer from India. I have <br /> great intrest
+          I’m a Full Stack Developer from India. I have <br /> great intrest
           in designing and coding for Web, I try <br /> to create great
           intuitive, dynamic user <br /> experiences.
         </InfoPara>

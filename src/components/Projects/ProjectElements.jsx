@@ -3,10 +3,10 @@ import { backgroundDark, primary, secondary } from "../colorScheme";
 import { Link } from "react-router-dom";
 export const ProjectMainWrapper = styled.section`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 75vw;
+  width: 85vw;
   height: 90vh;
   margin-left: auto;
   margin-right: auto;
@@ -42,13 +42,13 @@ export const ProjectWrapper = styled(Link)`
     height: 225px;
     position: absolute;
     z-index: 1;
-    border: 4px solid ${ primary };
+    border: 2px solid ${ primary };
     transition: 0.375s all ease-in-out ;
   }
 
   &::before {
     transform: translate(7px, 7px);
-    border: 4px solid ${ secondary };
+    border: 2px solid ${ secondary };
     z-index: 0;
   }
 

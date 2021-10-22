@@ -13,6 +13,7 @@ const ProjectMain = () => {
   useEffect(() => {
     getProjectInfo();
   }, []);
+
   return (
     <>
       <ProjectHeading>Projects</ProjectHeading>

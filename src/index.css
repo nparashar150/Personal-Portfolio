@@ -62,3 +62,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #64FFDA;
 }
+
+::-moz-selection {
+  color: #64FFDA;
+  background: #EEEEEE;
+}
+
+::selection {
+  color: #64FFDA;
+  background: #EEEEEE;
+}

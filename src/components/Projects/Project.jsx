@@ -16,7 +16,7 @@ const flex = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  width: "10vw",
+  width: "40vw",
   height: "40vh",
 };
 

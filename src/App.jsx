@@ -4,7 +4,7 @@ import Main from "./page/Main";
 import Loading from "./animation/Loading";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
-import ProjectMain from "./components/Projects/ProjectMain";
+import About from "./components/About/About";
 function App() {
 
   const [loader, setLoader] = useState(true);
@@ -28,7 +28,7 @@ function App() {
             <Route exact path="/" component={ Main } />
           </Switch>
           <Switch>
-            <Route exact path="/proj" component={() => (<ProjectMain />)} />
+            <Route exact path="/about" component={() => (<About />)} />
           </Switch>
       </Router>
       ) : (

@@ -15,7 +15,11 @@ export const EmailWrapper = styled.div`
   overflow: hidden;
   transition: 0.375s all ease-in-out;
   animation: 1.75s ${bounceAnimation};
-
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  
   &:hover,
   &:focus {
     margin-top: -15px;
@@ -35,7 +39,7 @@ export const EmailComponent = styled.a`
   &::after {
     width: 18rem;
     height: 3rem;
-    outline: 4px solid ${primary};
+    outline: 2px solid ${primary};
     transform: rotate(90deg);
     background: ${backgroundDark};
     content: "${(props) => props.value}";
@@ -47,8 +51,7 @@ export const EmailComponent = styled.a`
     content: "";
     width: 18rem;
     height: 3rem;
-    outline: 4px solid ${primary};
-    outline: 4px solid ${secondary};
+    outline: 2px solid ${secondary};
     transform: translate(7px, 7px) rotate(90deg);
     transition: 0.375s all ease-in-out;
     display: block;
@@ -71,7 +74,7 @@ export const EmailComponent = styled.a`
 `;
 
 export const EmailLine = styled.div`
-  border-right: 4px solid ${primary};
+  border-right: 2px solid ${primary};
   height: 13vh;
 
   @media (max-width: 768px) {
