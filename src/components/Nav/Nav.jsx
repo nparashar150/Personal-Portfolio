@@ -80,13 +80,13 @@ const Nav = () => {
             </svg>
           </NavImage>
           <NavLinks>
-            <Link to="/about">About</Link>
+            <Link to={{hash: "#about"}}>About</Link>
           </NavLinks>
           <NavLinks>
             <Link to="/skill">My Skill</Link>
           </NavLinks>
           <NavLinks>
-            <Link to="/projects">Projects</Link>
+            <Link to={{hash: "#projects"}}>Projects</Link>
           </NavLinks>
           <NavLinks>
             <Link to="/contact">Contact</Link>

@@ -183,6 +183,11 @@ export const AboutDetail = styled.p`
   padding: 0 3rem;
   color: ${secondary};
   letter-spacing: 0.05mm;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    padding: 0 10vw;
+  }
 `;
 
 export const AboutLeft = styled.div`

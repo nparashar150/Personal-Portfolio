@@ -4,14 +4,14 @@ import Main from "./page/Main";
 import Loading from "./animation/Loading";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
-import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 function App() {
 
   const [loader, setLoader] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoader(false)
-    }, 1000);
+    }, 5000);
   })
   return (
     <>
@@ -28,7 +28,7 @@ function App() {
             <Route exact path="/" component={ Main } />
           </Switch>
           <Switch>
-            <Route exact path="/about" component={() => (<About />)} />
+            <Route exact path="/contact" component={() => (<Contact />)} />
           </Switch>
       </Router>
       ) : (

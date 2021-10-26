@@ -3,25 +3,25 @@
     "1": {
       "name": "Windows 11",
       "content": "Microsoft Windows 11 Mobile UI concept using Figma. A prototype on Google Pixel 2.",
-      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/StartMenu.svg?token=APGZX4YIM3NAD45VMAFE3ZLBOV5JG",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/StartMenu.svg?token=APGZX4Z3CK7TAK6R3ID3BWLBP3PGA",
       "link": "https://www.instagram.com/p/CSEeej-FXCY/?utm_source=ig_web_copy_link"
     },
     "2": {
       "name": "Kindle Concept",
       "content": "Amazon Kindle WebApp concept made using React, Express, MongoDb. It uses JWT auth for creating accounts.",
-      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/AmazonKindle.png?token=APGZX44FVUGX6JOKDA37LNLBOV5FM",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/AmazonKindle.png?token=APGZX42AQCJDJDAIHYREMC3BP3PHQ",
       "link": "https://github.com/nparashar150/amazon-kindle-webapp-frontend"
     },
     "3": {
       "name": "ColtOS",
       "content": "Made website for Opensource Project 'Colt OS' using Vanilla HTML, CSS, JS.",
-      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/ColtEnigma.png?token=APGZX45NOOJGCN7AEJUNXOLBOV5GW",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/ColtEnigma.png?token=APGZX437JSCJQUQV65RMYBLBP3PJC",
       "link": "https://colt-enigma.github.io/"
     },
     "4": {
       "name": "Note.it",
       "content": "Notes App which stores data to LocalStorage and includes Firebase Auth, using HTML, CSS, JS.",
-      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/NoteIt.png?token=APGZX4YCZQDONO3YFWD4ZWTBOV5II",
+      "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/NoteIt.png?token=APGZX47OEBNS2XH2PYDQ3ODBP3PKM",
       "link": "https://msms-224ad.web.app/"
     }
   }

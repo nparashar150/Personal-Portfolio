@@ -18,7 +18,7 @@ export const EmailWrapper = styled.div`
   position: fixed;
   height: 100%;
   top: 0;
-  right: 0;
+  right: -1%;
   
   &:hover,
   &:focus {

@@ -16,7 +16,7 @@ const ProjectMain = () => {
 
   return (
     <>
-      <ProjectHeading>Projects</ProjectHeading>
+      {/* <ProjectHeading>Projects</ProjectHeading> */}
       <ProjectMainWrapper>
         {Object.values(projectInfo).map((element) => {
           return (
