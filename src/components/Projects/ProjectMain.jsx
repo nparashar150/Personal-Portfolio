@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Project from "./Project";
-import { ProjectMainWrapper, ProjectHeading } from "./ProjectElements";
+import { ProjectMainWrapper } from "./ProjectElements";
 import ProjectData from "./ProjectData.json";
 
 const ProjectMain = () => {

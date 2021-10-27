@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {primary, secondary, backgroundDark} from "../colorScheme";
+import { primary, secondary, backgroundDark } from "../colorScheme";
 
 export const ContactWrapper = styled.section`
   display: flex;
@@ -28,25 +28,30 @@ export const ContactData = styled.div`
     color: ${secondary};
   }
 
-  &::before, 
+  &::before,
   &::after {
     content: "";
     width: 107%;
     height: 107%;
     position: absolute;
     z-index: 0;
-    border: 2px solid ${ primary };
-    transition: 0.375s all ease-in-out ;
+    border: 2px solid ${primary};
+    transition: 0.375s all ease-in-out;
   }
 
   &::before {
     transform: translate(7px, 7px);
-    border: 2px solid ${ secondary };
+    border: 2px solid ${secondary};
     z-index: 0;
   }
 
   &::after {
     background: ${backgroundDark};
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: translate(0px, 0px);
   }
 `;
 export const ContactHeading = styled.h1`
@@ -78,14 +83,15 @@ export const ContactInput = styled.input`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   z-index: 1;
+  transition: 0.375s all ease-in-out;
 
   &:hover,
   &:focus {
-    background: transparent;
+    border: 2px solid ${secondary};
   }
 
   @media (max-width: 768px) {
-    width: 85vw;
+    width: 75vw;
   }
 `;
 
@@ -102,15 +108,23 @@ export const ContactInputMessage = styled.textarea`
   height: ${(props) => props.height};
   z-index: 1;
   resize: none;
-  
+  transition: 0.375s all ease-in-out;
+
   &:hover,
   &:focus {
-    background: transparent;
+    border: 2px solid ${secondary};
   }
 
   @media (max-width: 768px) {
-    width: 85vw;
+    width: 75vw;
   }
+`;
+export const ContactSubmitWrapper = styled.div`
+  display: block;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  margin-left: -24px;
 `;
 export const ContactSubmit = styled.button`
   width: ${(props) => props.width};
@@ -123,8 +137,14 @@ export const ContactSubmit = styled.button`
   font-size: 1.15rem;
   cursor: pointer;
   z-index: 1;
+  transition: 0.375s all ease-in-out;
+
+  &:hover,
+  &:focus {
+    border: 2px solid ${secondary};
+  }
 
   @media (max-width: 768px) {
-    width: 85vw;
+    width: 75vw;
   }
 `;

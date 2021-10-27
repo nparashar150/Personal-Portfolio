@@ -3,12 +3,12 @@ import { secondary, backgroundDark, primary } from "../colorScheme";
 
 export const AboutSection = styled.section`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: 1rem 0 2rem 2rem;
-  margin-left: 15vw;
+  padding: 1rem 0 2rem 3rem;
+  /* margin-left: 15vw; */
 
   @media (max-width: 768px) {
     height: 100%;

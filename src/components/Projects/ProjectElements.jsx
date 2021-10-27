@@ -8,17 +8,17 @@ export const ProjectMainWrapper = styled.section`
   flex-direction: column;
   flex-wrap: wrap;
   width: 50vw;
+  position: absolute;
+  margin-left: 15vw;
   height: 100vh; */
   display: grid;
   grid-template-columns: 25rem 25rem;
   grid-template-rows: 15rem;
   grid-gap: 7rem;
   row-gap: 7rem;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
   justify-items: center;
-  /* position: absolute; */
-  margin-left: 15vw;
   padding: 5rem 0 5rem 3rem;
 
   @media (max-width: 768px) {
