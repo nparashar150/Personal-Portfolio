@@ -39,7 +39,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result);
           form.current.Contact_Name.value = "";
           form.current.Contact_Email.value = "";
           form.current.Contact_Subject.value = "";

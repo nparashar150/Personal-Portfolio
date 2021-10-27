@@ -85,6 +85,17 @@ export const AboutImageWrapper = styled.div`
     transform: translate(5px, 5px);
     border: 2px solid ${secondary};
   }
+
+  @media (max-width: 768px) {
+    width: 75vw;
+    height: 75vw;
+
+    &::before,
+    &::after {
+    width: 75vw;
+    height: 75vw;      
+    }
+  }
 `;
 
 export const AboutImageFilter = styled.div`
@@ -98,6 +109,11 @@ export const AboutImageFilter = styled.div`
   &:focus {
     background: transparent;
   }
+
+  @media (max-width: 768px) {
+    width: 75vw;
+    height: 75vw;
+  }
 `;
 
 export const AboutImage = styled.img`
@@ -105,6 +121,11 @@ export const AboutImage = styled.img`
   height: 18rem;
   position: absolute;
   z-index: 5;
+
+  @media (max-width: 768px) {
+    width: 75vw;
+    height: 75vw;
+  }
 `;
 
 export const AboutName = styled.div`
