@@ -14,9 +14,9 @@ import {
 import AboutImageElement from "./Assets/AboutImage.png";
 import Fade from "react-reveal/Fade";
 
-const About = () => {
+const About = (props) => {
   return (
-    <>
+    <div id="about">
       <AboutSection>
         <AboutWrapper>
           <AboutLeft>
@@ -54,7 +54,7 @@ const About = () => {
           </AboutRight>
         </AboutWrapper>
       </AboutSection>
-    </>
+    </div>
   );
 };
 

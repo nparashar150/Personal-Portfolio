@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import styled, {keyframes} from "styled-components";
+// import { Link } from "react-scroll";
+import styled, { keyframes } from "styled-components";
 import {
   backgroundDark,
   hightlightBlue,
   primary,
   secondary,
 } from "../colorScheme";
-import {fadeInLeft} from "react-animations";
+import { fadeInLeft } from "react-animations";
 
 const NavAnimation = keyframes`${fadeInLeft}`;
 
@@ -106,7 +107,7 @@ export const NavElements = styled.div`
   }
 `;
 
-export const NavLinks = styled.div`
+export const NavLinks = styled(Link)`
   border: 1px solid ${secondary};
   border-right: 0px;
   border-left: 0px;
@@ -119,43 +120,39 @@ export const NavLinks = styled.div`
   align-items: center;
   transition: 0.375s ease-in-out;
   animation: 1.375s ${NavAnimation};
+  text-decoration: none;
+  color: ${secondary};
 
   &:nth-of-type(5),
   &:nth-of-type(4),
-  &:nth-of-type(3),
-  &:nth-of-type(2) {
+  &:nth-of-type(3) {
     border-top: 0px;
   }
   &:hover,
   &:focus {
-    a {
-      color: ${hightlightBlue};
-    }
+    color: ${hightlightBlue};
     width: 9.5vw;
     border-bottom: 0;
-    outline: 2px solid ${primary};
-  }
-  a {
-    color: ${secondary};
+    outline: 1px solid ${primary};
     text-decoration: none;
     transition: 0.375s ease-in-out;
-  }
 
-  @media (max-width: 1024px) {
-    width: 10vw;
+    @media (max-width: 1024px) {
+      width: 10vw;
 
-    &:hover,
-    &:focus {
-      width: 13vw;
+      &:hover,
+      &:focus {
+        width: 13vw;
+      }
     }
-  }
 
-  @media (max-width: 768px) {
-    width: 49.5vw;
+    @media (max-width: 768px) {
+      width: 49.5vw;
 
-    &:hover,
-    &:focus {
-      width: 98vw;
+      &:hover,
+      &:focus {
+        width: 98vw;
+      }
     }
   }
 `;
@@ -243,8 +240,8 @@ export const NavImage = styled(Link)`
   animation: 1.375s ${NavAnimation};
 
   @media (min-width: 1400px) {
-      width: 6rem;
-      height: 6rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   svg {
@@ -308,7 +305,7 @@ export const NavMobile = styled.button`
 `;
 
 export const NavMobileBar = styled.nav`
-  position: sticky;
+  position: fixed;
   z-index: 11;
   top: 0;
   height: 9vh;
@@ -318,6 +315,7 @@ export const NavMobileBar = styled.nav`
   align-items: center;
   flex-direction: row;
   background: ${backgroundDark};
+  filter: drop-shadow(0 0 5px ${primary + "75"});
 
   @media (max-width: 768px) {
     display: flex;

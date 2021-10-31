@@ -29,7 +29,7 @@ const Main = () => {
         </MainWrapper>
         <About id="about" />
         <ProjectMain id="projects" />
-        <Contact />
+        <Contact id="contact" />
       </div>
     </>
   );
