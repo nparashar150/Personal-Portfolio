@@ -4,6 +4,7 @@ import {
   SkillsWrapper,
   SkillName,
   SkillsFilter,
+  SkillsHeading
 } from "./SkillsElements";
 
 import SkillsData from "./SkillsData.json";
@@ -22,6 +23,7 @@ const Skills = (props) => {
   return (
     <>
       <SkillsSectionWrapper id={props.id}>
+    <SkillsHeading>Skills</SkillsHeading>
         <SkillsWrapper>
           {Object.values(skillsInfo).map((element) => {
             return (
