@@ -1,11 +1,10 @@
 import styled, { css, keyframes } from "styled-components";
 import { background, backgroundDark, primary, secondary } from "../colorScheme";
-import { Link } from "react-router-dom";
 import { fadeInDown } from "react-animations"; 
 
 const ButtonAnimation = keyframes`${fadeInDown}`;
 
-export const Button = styled(Link)`
+export const Button = styled.a`
   background: ${background};
   color: ${secondary};
   animation: 5s ${ButtonAnimation};
@@ -33,6 +32,7 @@ export const Button = styled(Link)`
     border: 2px solid ${primary};
     transition: 0.375s all ease-in-out;
     z-index: 1;
+    cursor: pointer;
   }
 
   &::before {

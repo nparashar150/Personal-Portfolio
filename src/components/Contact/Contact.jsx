@@ -25,7 +25,7 @@ const defaultOptions = {
   },
 };
 
-const Contact = () => {
+const Contact = (props) => {
   const form = useRef();
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const sendEmail = (e) => {
@@ -64,7 +64,7 @@ const Contact = () => {
         ""
       )}
       <Zoom>
-        <ContactWrapper>
+        <ContactWrapper id={props.id}>
           <ContactData>
             <ContactHeading>Get in Touch</ContactHeading>
             <ContactForm ref={form} onSubmit={sendEmail} action="">

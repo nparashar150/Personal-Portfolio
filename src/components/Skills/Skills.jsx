@@ -9,7 +9,7 @@ import {
 import SkillsData from "./SkillsData.json";
 import Fade from "react-reveal/Fade";
 
-const Skills = () => {
+const Skills = (props) => {
   let [skillsInfo, setSkillsInfo] = useState([]);
   const getSkillsInfo = async () => {
     setSkillsInfo(await SkillsData.data);
@@ -21,7 +21,7 @@ const Skills = () => {
 
   return (
     <>
-      <SkillsSectionWrapper>
+      <SkillsSectionWrapper id={props.id}>
         <SkillsWrapper>
           {Object.values(skillsInfo).map((element) => {
             return (

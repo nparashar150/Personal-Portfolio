@@ -85,16 +85,16 @@ const Nav = () => {
               <path d="M129.563 107.563L109.563 96.6239L110 17L129.563 17.5635L129.563 107.563Z" />
             </svg>
           </NavImage>
-          <NavLinks to="about" smooth={true} duration={500} spy={true} exact={true}>
+          <NavLinks href="#about">
             About
           </NavLinks>
-          <NavLinks to="skills" smooth={true} duration={500} spy={true} exact={true}>
+          <NavLinks href="#skills">
             My Skill
           </NavLinks>
-          <NavLinks to="projects" smooth={true} duration={500} spy={true} exact={true}>
+          <NavLinks href="#projects">
             Projects
           </NavLinks>
-          <NavLinks to="contact" smooth={true} duration={500} spy={true} exact={true}>
+          <NavLinks href="#contact">
             Contact
           </NavLinks>
           <NavSocialIcons>

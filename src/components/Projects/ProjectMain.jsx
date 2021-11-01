@@ -3,7 +3,7 @@ import Project from "./Project";
 import { ProjectMainWrapper } from "./ProjectElements";
 import ProjectData from "./ProjectData.json";
 
-const ProjectMain = () => {
+const ProjectMain = (props) => {
   let [projectInfo, setProjectInfo] = useState([]);
   const getProjectInfo = async () => {
     setProjectInfo(await ProjectData.data);
@@ -17,7 +17,7 @@ const ProjectMain = () => {
   return (
     <>
       {/* <ProjectHeading>Projects</ProjectHeading> */}
-      <ProjectMainWrapper>
+      <ProjectMainWrapper id={props.id}>
         {Object.values(projectInfo).map((element) => {
           return (
             <Project

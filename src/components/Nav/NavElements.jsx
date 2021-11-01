@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import { Link } from "react-scroll";
 import styled, { keyframes } from "styled-components";
 import {
   backgroundDark,
@@ -107,7 +106,7 @@ export const NavElements = styled.div`
   }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.a`
   border: 1px solid ${secondary};
   border-right: 0px;
   border-left: 0px;

@@ -53,7 +53,7 @@ const Landing = () => {
           in designing and coding for Web, I try <br /> to create great
           intuitive, dynamic user <br /> experiences.
         </InfoPara>
-        <Button value="Say Hello" to="/contact" size="1.3rem"></Button>
+        <Button value="Say Hello" href="#contact" size="1.3rem"></Button>
       </HeadingWrapper>
       <LoadingWrapper>
         <Lottie options={defaultOptions} width={50} height={50} />

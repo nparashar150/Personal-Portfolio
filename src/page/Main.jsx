@@ -29,7 +29,7 @@ const Main = () => {
           </EmailWrapper>
         </MainWrapper>
         <About id="about" />
-        <Skills />
+        <Skills id="skills" />
         <ProjectMain id="projects" />
         <Contact id="contact" />
       </div>
