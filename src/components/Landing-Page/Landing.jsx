@@ -6,6 +6,38 @@ import {
   InfoPara,
 } from "./LandingElements";
 import { Button } from "../Button/Button";
+import Lottie from "react-lottie";
+import animationData from "./lf30_NnBW3K.json";
+import styled from "styled-components";
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  name: "Loading Animation",
+  render: "svg",
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
+const LoadingWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  bottom: 2rem;
+
+  @media (max-width: 768px) {
+    bottom: 0;
+  }
+
+  @media (max-width: 320px) {
+    display: none;
+  }
+` 
 
 const Landing = () => {
   return (
@@ -23,6 +55,9 @@ const Landing = () => {
         </InfoPara>
         <Button value="Say Hello" to="/contact" size="1.3rem"></Button>
       </HeadingWrapper>
+      <LoadingWrapper>
+        <Lottie options={defaultOptions} width={50} height={50} />
+      </LoadingWrapper>
     </>
   );
 };

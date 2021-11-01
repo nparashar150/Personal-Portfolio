@@ -7,6 +7,7 @@ import {
 } from "./SkillsElements";
 
 import SkillsData from "./SkillsData.json";
+import Fade from "react-reveal/Fade";
 
 const Skills = () => {
   let [skillsInfo, setSkillsInfo] = useState([]);
@@ -24,11 +25,13 @@ const Skills = () => {
         <SkillsWrapper>
           {Object.values(skillsInfo).map((element) => {
             return (
-              <SkillName>
-                <SkillsFilter width={element.percentage} widthLeft={element.left}>
-                  {element.name}
-                </SkillsFilter>
-              </SkillName>
+              <Fade cascade>
+                <SkillName>
+                  <SkillsFilter width={element.percentage} widthLeft={element.left}>
+                    {element.name}
+                  </SkillsFilter>
+                </SkillName>
+              </Fade>
             );
           })}
         </SkillsWrapper>

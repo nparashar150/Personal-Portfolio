@@ -23,7 +23,7 @@ const flex = {
 const Project = (props) => {
   return (
     <>
-      <Fade right cascade>
+      <Fade cascade>
         <div style={flex}>
           <ProjectWrapper target={"_blank"} to={props.to}>
             <ProjectPreview>
