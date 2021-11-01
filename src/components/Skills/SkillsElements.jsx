@@ -7,6 +7,10 @@ export const SkillsSectionWrapper = styled.section`
   align-items: center;
   height: 100vh;
   width: 100vw;
+
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;
 
 export const SkillsWrapper = styled.section`
