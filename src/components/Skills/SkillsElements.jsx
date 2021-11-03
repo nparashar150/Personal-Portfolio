@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primary, secondary } from "../colorScheme";
+import { primary, secondary } from "../Shared/colorScheme";
 
 export const SkillsSectionWrapper = styled.section`
   display: flex;

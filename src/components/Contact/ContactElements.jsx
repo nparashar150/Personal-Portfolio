@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { primary, secondary, backgroundDark } from "../colorScheme";
+import { primary, secondary, backgroundDark } from "../Shared/colorScheme";
 
 export const ContactWrapper = styled.section`
   display: flex;

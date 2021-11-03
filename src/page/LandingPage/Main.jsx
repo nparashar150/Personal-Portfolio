@@ -1,16 +1,16 @@
 import React from "react";
-import Nav from "../components/Nav/Nav.jsx";
-import Landing from "../components/Landing-Page/Landing.jsx";
+import Nav from "../../components/Shared/Nav/Nav";
+import Landing from "../../components/LandingPage/Landing";
 import { MainWrapper } from "./MainElements";
 import {
   EmailWrapper,
   EmailComponent,
   EmailLine,
-} from "../components/Email/Email.jsx";
-import ProjectMain from "../components/Projects/ProjectMain.jsx";
-import About from "../components/About/About.jsx";
-import Contact from "../components/Contact/Contact.jsx";
-import Skills from "../components/Skills/Skills.jsx";
+} from "../../components/Shared/Email/Email";
+import ProjectMain from "../../components/Projects/ProjectMain.jsx";
+import About from "../../components/About/About";
+import Contact from "../../components/Contact/Contact.jsx";
+import Skills from "../../components/Skills/Skills.jsx";
 const Main = () => {
   return (
     <>

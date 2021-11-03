@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
-import { primary, secondary } from "../colorScheme";
+import { primary, secondary } from "../Shared/colorScheme";
 import { fadeIn } from "react-animations";
 
 const HeadingLargeAnimation = keyframes`${fadeIn}`;

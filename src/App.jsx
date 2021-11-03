@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Main from "./page/Main";
+import Main from "./page/LandingPage/Main";
 import Loading from "./animation/Loading";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";

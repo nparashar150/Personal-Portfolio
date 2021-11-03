@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { secondary, backgroundDark, primary } from "../colorScheme";
+import { secondary, backgroundDark, primary } from "../Shared/colorScheme";
 
 export const AboutSection = styled.section`
   display: flex;

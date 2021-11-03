@@ -5,7 +5,7 @@ import {
   HeadingLarge,
   InfoPara,
 } from "./LandingElements";
-import { Button } from "../Button/Button";
+import { Button } from "../Shared/Button/Button";
 import Lottie from "react-lottie";
 import animationData from "./lf30_NnBW3K.json";
 import styled from "styled-components";

@@ -2,7 +2,7 @@ import React from 'react'
 import Lottie from 'react-lottie'
 import styled from 'styled-components'
 import animationData from './lf30_editor_c1tvetoa.json'
-import { backgroundDark } from '../components/colorScheme'
+import { backgroundDark } from '../components/Shared/colorScheme'
 
 const defaultOptions = { 
   loop: true,
