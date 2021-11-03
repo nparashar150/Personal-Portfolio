@@ -39,15 +39,14 @@ const About = (props) => {
               <AboutDetailWrapper>
                 <AboutDetail>
                   Hello! My name is Naman Parashar, I am a Full Stack developer
-                  from India. My interest in Web Development started back in 2021
-                  when I decided to contribute to opensource!
+                  from India. My interest in Web Development started back in
+                  2020 when I decided to contribute to ACE!
                   <br /> <br />
-                  Right now I am pursuing BCA from Guru Gobind Singh
-                  Indraprastha University. I am actively looking for
+                  Right now I am pursuing Bachelor of Computer Application from
+                  Guru Gobind Singh Indraprastha University. I am looking for
                   opportunities that will help me in growing/building my tech
-                  stack.I am still a learner who still needs to learn lot
-                  of cool things. I love to code, watch anime
-                  and listen music.
+                  stack.I am still a learner who still needs to learn lot of
+                  cool things. I love to code, watch anime and listen music.
                 </AboutDetail>
               </AboutDetailWrapper>
             </Fade>
