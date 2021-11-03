@@ -3,7 +3,7 @@ import {
   HeadingWrapper,
   Heading,
   HeadingLarge,
-  InfoPara,
+  InfoPara
 } from "./LandingElements";
 import { Button } from "../Shared/Button/Button";
 import Lottie from "react-lottie";
@@ -34,10 +34,10 @@ const LoadingWrapper = styled.a`
     bottom: 0;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 320px), (max-height: 630px) {
     display: none;
   }
-` 
+`;
 
 const Landing = () => {
   return (
@@ -49,13 +49,13 @@ const Landing = () => {
           <HeadingLarge>I am a Web Developer.</HeadingLarge>
         </Heading>
         <InfoPara>
-          I’m a Full Stack Developer from India. I have <br /> great intrest
-          in designing and coding for Web, I try <br /> to create great
-          intuitive, dynamic user <br /> experiences.
+          I’m a Full Stack Developer from India. I have <br /> great intrest in
+          designing and coding for Web, I try <br /> to create great intuitive,
+          dynamic user <br /> experiences.
         </InfoPara>
         <Button value="Say Hello" href="#about" size="1.3rem"></Button>
       </HeadingWrapper>
-      <LoadingWrapper href="#about" rel="noreferrer" >
+      <LoadingWrapper href="#about" rel="noreferrer">
         <Lottie options={defaultOptions} width={50} height={50} />
       </LoadingWrapper>
     </>
