@@ -11,6 +11,7 @@ import ProjectMain from "../../components/Projects/ProjectMain.jsx";
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact.jsx";
 import Skills from "../../components/Skills/Skills.jsx";
+import Footer from "../../components/Shared/Footer/Footer";
 const Main = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const Main = () => {
         <Skills id="skills" />
         <ProjectMain id="projects" />
         <Contact id="contact" />
+        <Footer />
       </div>
     </>
   );
