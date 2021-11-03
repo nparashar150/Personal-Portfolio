@@ -21,7 +21,7 @@ const defaultOptions = {
   },
 };
 
-const LoadingWrapper = styled.div`
+const LoadingWrapper = styled.a`
   position: absolute;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@ const Landing = () => {
         </InfoPara>
         <Button value="Say Hello" href="#about" size="1.3rem"></Button>
       </HeadingWrapper>
-      <LoadingWrapper>
+      <LoadingWrapper href="#about" rel="noreferrer" >
         <Lottie options={defaultOptions} width={50} height={50} />
       </LoadingWrapper>
     </>

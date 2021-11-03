@@ -135,6 +135,7 @@ export const NavLinks = styled.a`
     outline: 1px solid ${primary};
     text-decoration: none;
     transition: 0.375s ease-in-out;
+  }
 
     @media (max-width: 1024px) {
       width: 10vw;
@@ -153,7 +154,6 @@ export const NavLinks = styled.a`
         width: 98vw;
       }
     }
-  }
 `;
 
 export const NavSocialIcons = styled.div`

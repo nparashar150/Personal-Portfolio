@@ -4,7 +4,7 @@ import {
   SkillsWrapper,
   SkillName,
   SkillsFilter,
-  SkillsHeading
+  SkillsHeading,
 } from "./SkillsElements";
 
 import SkillsData from "./SkillsData.json";
@@ -23,13 +23,16 @@ const Skills = (props) => {
   return (
     <>
       <SkillsSectionWrapper id={props.id}>
-    <SkillsHeading>Skills</SkillsHeading>
+        <SkillsHeading>Skills</SkillsHeading>
         <SkillsWrapper>
           {Object.values(skillsInfo).map((element) => {
             return (
               <Fade cascade>
                 <SkillName>
-                  <SkillsFilter width={element.percentage} widthLeft={element.left}>
+                  <SkillsFilter
+                    width={element.percentage}
+                    widthLeft={element.left}
+                  >
                     {element.name}
                   </SkillsFilter>
                 </SkillName>

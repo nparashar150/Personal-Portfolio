@@ -8,6 +8,7 @@ export const SkillsSectionWrapper = styled.section`
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
     height: 100%;
@@ -46,7 +47,7 @@ export const SkillsFilter = styled.div`
   width: 100%;
   background: linear-gradient(
     90deg,
-    ${primary + "75"} ${(props) => props.width},
+    ${primary + "50"} ${(props) => props.width},
     transparent ${(props) => props.widthLeft}
   );
   z-index: 5;
@@ -56,15 +57,24 @@ export const SkillsFilter = styled.div`
   justify-content: center;
   align-items: center;
   font-family: Sora-Light;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(
+    90deg,
+    ${primary + "75"} ${(props) => props.width},
+    transparent ${(props) => props.widthLeft}
+  );
+  }
 `;
 
 export const SkillsHeading = styled.h1`
   color: ${secondary};
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Sora-SemiBold;
   width: 100vw;
-  padding: 2rem 0;
+  padding: 2rem 0 2rem 2rem;
 
   @media (max-width: 768px) {
     text-align: start;
