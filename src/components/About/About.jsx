@@ -38,15 +38,15 @@ const About = (props) => {
             <Fade cascade>
               <AboutDetailWrapper>
                 <AboutDetail>
-                  Hello! My name is Naman Parashar, I am a Full Stack developer
+                  Hello! My name is Naman Parashar, I am a Front End developer
                   from India. My interest in Web Development started back in
                   2020 when I decided to contribute to ACE!
                   <br /> <br />
                   Right now I am pursuing Bachelor of Computer Application from
                   Guru Gobind Singh Indraprastha University. I am looking for
-                  opportunities that will help me in growing/building my tech
-                  stack.I am still a learner who still needs to learn lot of
-                  cool things. I love to code, watch anime and listen music.
+                  opportunities that will help me in growing my tech
+                  knowledge.I am still a learner who still needs to learn lot of
+                  new things. I love to code, watch anime and listen music.
                 </AboutDetail>
               </AboutDetailWrapper>
             </Fade>
