@@ -22,9 +22,18 @@ const toggleHome = () => {
 const Nav = () => {
   let [toggleNav, setToggleNav] = useState(false);
 
+  const toggleNavItem = () => {
+    if (window.screen.width <= 768) {
+      setToggleNav(!toggleNav);
+    } else {
+
+    }
+  }
+
   useEffect(() => {
     window.screen.width >= 768 ? setToggleNav(true) : setToggleNav(false);
   }, []);
+  
   const showHide = {
     display: toggleNav ? "block" : "none",
     transition: "all 0.375s ease-in-out",
@@ -85,16 +94,16 @@ const Nav = () => {
               <path d="M129.563 107.563L109.563 96.6239L110 17L129.563 17.5635L129.563 107.563Z" />
             </svg>
           </NavImage>
-          <NavLinks href="#about">
+          <NavLinks onClick={() => toggleNavItem()} href="#about">
             About
           </NavLinks>
-          <NavLinks href="#skills">
+          <NavLinks onClick={() => toggleNavItem()} href="#skills">
             My Skill
           </NavLinks>
-          <NavLinks href="#projects">
+          <NavLinks onClick={() => toggleNavItem()} href="#projects">
             Projects
           </NavLinks>
-          <NavLinks href="#contact">
+          <NavLinks onClick={() => toggleNavItem()} href="#contact">
             Contact
           </NavLinks>
           <NavSocialIcons>
@@ -115,7 +124,7 @@ const Nav = () => {
               <FaInstagram size="1.5rem"></FaInstagram>
             </a>
             <a
-              href="https:/t.me/nparashar150"
+              href="https://t.me/nparashar150"
               target="_blank"
               rel="noreferrer"
               aria-label="Telegram"
