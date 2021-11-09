@@ -125,6 +125,11 @@ export const ContactSubmitWrapper = styled.div`
   top: 5%;
   left: 50%;
   margin-left: -24px;
+  z-index: 20;
+
+  @media (max-width: 768px) {
+    top: 10%;
+  }
 `;
 export const ContactSubmit = styled.button`
   width: ${(props) => props.width};

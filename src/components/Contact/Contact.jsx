@@ -28,9 +28,9 @@ const defaultOptions = {
 const Contact = (props) => {
   const form = useRef();
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
+    await emailjs
       .sendForm(
         "service_hc3wdkt",
         "template_66befo6",
