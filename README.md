@@ -12,56 +12,77 @@ If you find anything buggy you can report it to me.
 <br>
 
 ## Directory Structure 
-```
-|-- .gitignore
-|-- README.md
-|-- package.json
-|-- public
-|   |-- favicon
-|   |   |-- android-chrome-192x192.png
-|   |   |-- android-chrome-512x512.png
-|   |   |-- apple-touch-icon.png
-|   |   |-- favicon-16x16.png
-|   |   |-- favicon-32x32.png
-|   |   |-- favicon.ico
-|   |   |-- favicon_io.zip
-|   |   `-- site.webmanifest
-|   |-- index.html
-|   |-- manifest.json
-|   `-- robots.txt
-|-- screenshots
-|   |-- 1.png
-|   |-- 2.png
-|   |-- 3.png
-|   |-- 4.png
-|   `-- 5.png
-|-- src
-|   |-- App.css
-|   |-- App.jsx
-|   |-- animation
-|   |   |-- Loading.jsx
-|   |   `-- lf30_editor_c1tvetoa.json
-|   |-- components
-|   |   |-- About
-|   |   |-- Contact
-|   |   |-- LandingPage
-|   |   |-- Projects
-|   |   |-- Shared
-|   |   `-- Skills
-|   |-- font
-|   |   |-- Sora-Bold.ttf
-|   |   |-- Sora-ExtraBold.ttf
-|   |   |-- Sora-ExtraLight.ttf
-|   |   |-- Sora-Light.ttf
-|   |   |-- Sora-Medium.ttf
-|   |   |-- Sora-Regular.ttf
-|   |   |-- Sora-SemiBold.ttf
-|   |   `-- Sora-Thin.ttf
-|   |-- index.css
-|   |-- index.jsx
-|   `-- page
-|       `-- LandingPage
-`-- yarn.lock
+```.
+├── .gitignore
+├── README.md
+├── package.json
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── animation
+│   │   ├── Loading.jsx
+│   │   └── lf30_editor_c1tvetoa.json
+│   ├── components
+│   │   ├── About
+│   │   │   ├── About.jsx
+│   │   │   ├── AboutElements.jsx
+│   │   │   └── Assets
+│   │   │       └── AboutImage.png
+│   │   ├── Contact
+│   │   │   ├── Contact.jsx
+│   │   │   ├── ContactElements.jsx
+│   │   │   └── lf30_editor_lrfkphqf.json
+│   │   ├── LandingPage
+│   │   │   ├── Landing.jsx
+│   │   │   ├── LandingElements.jsx
+│   │   │   └── lf30_NnBW3K.json
+│   │   ├── Projects
+│   │   │   ├── Project.jsx
+│   │   │   ├── ProjectData.json
+│   │   │   ├── ProjectElements.jsx
+│   │   │   ├── ProjectLogo
+│   │   │   │   ├── AmazonKindle.png
+│   │   │   │   ├── ColtEnigma.png
+│   │   │   │   ├── NoteIt.png
+│   │   │   │   └── StartMenu.svg
+│   │   │   └── ProjectMain.jsx
+│   │   ├── Shared
+│   │   │   ├── BackToHome
+│   │   │   │   └── BackToHome.jsx
+│   │   │   ├── Button
+│   │   │   │   └── Button.jsx
+│   │   │   ├── Email
+│   │   │   │   └── Email.jsx
+│   │   │   ├── Footer
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   └── FooterElements.jsx
+│   │   │   ├── Nav
+│   │   │   │   ├── Nav.jsx
+│   │   │   │   └── NavElements.jsx
+│   │   │   └── colorScheme.jsx
+│   │   └── Skills
+│   │       ├── Skills.jsx
+│   │       ├── SkillsData.json
+│   │       └── SkillsElements.jsx
+│   ├── font
+│   │   ├── Sora-Bold.ttf
+│   │   ├── Sora-ExtraBold.ttf
+│   │   ├── Sora-ExtraLight.ttf
+│   │   ├── Sora-Light.ttf
+│   │   ├── Sora-Medium.ttf
+│   │   ├── Sora-Regular.ttf
+│   │   ├── Sora-SemiBold.ttf
+│   │   └── Sora-Thin.ttf
+│   ├── index.css
+│   ├── index.jsx
+│   └── page
+│       ├── AboutPage
+│       │   ├── About.jsx
+│       │   └── AboutElements.jsx
+│       └── LandingPage
+│           ├── Main.jsx
+│           └── MainElements.jsx
+└── yarn.lock
 ```
 <br>
 
