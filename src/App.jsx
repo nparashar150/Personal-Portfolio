@@ -20,6 +20,7 @@ function App() {
         <title> | Naman Parashar</title>
         <meta name="description" content="Naman Parashar Portfolio" />
         <meta name="keywords" content="Naman, Parashar, Portfolio, nparashar150, NamanParashar" />
+        <meta name="google-site-verification" content="i85RmtUSgXAufFNybjnUCqxvPbcMAQT-C3sjmDtewIo" />
       </Helmet>
     {
       loader === false ? (
