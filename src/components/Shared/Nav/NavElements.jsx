@@ -17,7 +17,7 @@ export const NavWrapper = styled.nav`
   position: sticky;
   left: 0;
   /* border-right: 2px solid ${secondary}; */
-  z-index: 5;
+  z-index: 15;
   transition: 0.375s ease-in-out;
   animation: 2s ${NavAnimation};
 

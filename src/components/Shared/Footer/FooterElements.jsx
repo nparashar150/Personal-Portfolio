@@ -6,9 +6,11 @@ export const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   height: 10vh;
-  width: 100vw;
+  margin-left: 12vw;
+  width: 88vw;
   background: ${backgroundDark};
   padding: 1rem 0;
+  z-index: 5;
 `;
 
 export const FooterText = styled.h1`

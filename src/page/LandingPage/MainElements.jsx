@@ -7,6 +7,7 @@ export const MainWrapper = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  z-index: 5;
   @media (max-width: 768px) {
     display: flex;
     justify-content: flex-start;
@@ -14,4 +15,9 @@ export const MainWrapper = styled.div`
     align-items: flex-start;
     flex-direction: column;
   }
+`;
+
+export const Wrapper = styled.div`
+  position: absolute;
+  z-index: 5;
 `;
