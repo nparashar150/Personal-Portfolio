@@ -18,13 +18,14 @@ const ProjectMain = (props) => {
     <>
       {/* <ProjectHeading>Projects</ProjectHeading> */}
       <ProjectMainWrapper id={props.id}>
-        {Object.values(projectInfo).map((element) => {
+        {Object.values(projectInfo).map((element, key) => {
           return (
             <Project
               name={element.name}
               img={element.image}
               value={element.content}
               to={{ pathname: element.link }}
+              key={key}
             />
           );
         })}

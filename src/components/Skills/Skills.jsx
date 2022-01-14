@@ -25,9 +25,9 @@ const Skills = (props) => {
       <SkillsSectionWrapper id={props.id}>
         <SkillsHeading>Skills</SkillsHeading>
         <SkillsWrapper>
-          {Object.values(skillsInfo).map((element) => {
+          {Object.values(skillsInfo).map((element, key) => {
             return (
-              <Fade cascade>
+              <Fade key={key} cascade>
                 <SkillName>
                   <SkillsFilter
                     width={element.percentage}
