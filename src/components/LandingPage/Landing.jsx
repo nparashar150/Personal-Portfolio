@@ -1,4 +1,3 @@
-import React from "react";
 import {
   HeadingWrapper,
   Heading,
@@ -8,6 +7,7 @@ import {
 import { Button } from "../Shared/Button/Button";
 import Lottie from "react-lottie";
 import animationData from "./lf30_NnBW3K.json";
+import Resume from "./Resume.pdf";
 import styled from "styled-components";
 
 const defaultOptions = {
@@ -41,6 +41,9 @@ const LoadingWrapper = styled.a`
 `;
 
 const Landing = () => {
+  const handleResumePdf = () => {
+    window.open(Resume, "_blank");
+  }
   return (
     <>
       <HeadingWrapper>
@@ -54,7 +57,7 @@ const Landing = () => {
           designing and coding for Web, I try <br /> to create great intuitive,
           dynamic user <br /> experiences.
         </InfoPara>
-        <Button value="Say Hello" href="#contact" size="1.3rem"></Button>
+        <Button value="Resume" onClick={handleResumePdf} size="1.3rem"></Button>
       </HeadingWrapper>
       <LoadingWrapper href="#about" rel="noreferrer">
         <Lottie options={defaultOptions} width={50} height={50} />
