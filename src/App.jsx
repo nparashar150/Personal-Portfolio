@@ -5,6 +5,8 @@ import Loading from "./animation/Loading";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import Skills from "./components/Skills/Skills";
+import Mouse from "./components/Shared/Mouse/Mouse";
+
 function App() {
 
   const [loader, setLoader] = useState(true);
@@ -15,6 +17,7 @@ function App() {
   })
   return (
     <>
+      <Mouse />
       <Helmet>
         <html lang="en" />
         <title> | Naman Parashar</title>

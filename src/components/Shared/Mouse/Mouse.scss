@@ -1,0 +1,12 @@
+.cursor {
+  z-index: 100;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: hsla(209, 87%, 6%, 0.5);
+  border: 0.15rem solid hsl(166, 100%, 70%, 0.75);
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+}
