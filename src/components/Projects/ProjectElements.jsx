@@ -166,9 +166,11 @@ export const ProjectPreview = styled.section`
 `;
 
 export const ProjectHeadingWrapper= styled.div`
-  margin: 3rem 0 -4rem 0;
+  margin-top: 5rem;
+  padding-bottom: calc(2rem + 7vh);
 
   @media (max-width: 768px) {
+    padding-bottom: 0;
     margin: 7rem 0 -5rem 0;
   }
 `;

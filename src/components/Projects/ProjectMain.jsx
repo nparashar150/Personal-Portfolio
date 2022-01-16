@@ -16,7 +16,7 @@ const ProjectMain = (props) => {
 
   return (
     <>
-      <ProjectHeadingWrapper>
+    <ProjectHeadingWrapper>
         <ProjectHeading>Projects</ProjectHeading>
       </ProjectHeadingWrapper>
       <ProjectMainWrapper id={props.id}>

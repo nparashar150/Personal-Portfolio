@@ -17,7 +17,7 @@ const flex = {
   justifyContent: "center",
   alignItems: "center",
   width: "40vw",
-  height: "40vh",
+  // height: "40vh",
 };
 
 const Project = (props) => {
