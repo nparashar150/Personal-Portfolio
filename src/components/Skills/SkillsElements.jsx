@@ -61,10 +61,10 @@ export const SkillsFilter = styled.div`
   &:hover,
   &:focus {
     background: linear-gradient(
-    90deg,
-    ${primary + "75"} ${(props) => props.width},
-    transparent ${(props) => props.widthLeft}
-  );
+      90deg,
+      ${primary + "75"} ${(props) => props.width},
+      transparent ${(props) => props.widthLeft}
+    );
   }
 `;
 
@@ -81,4 +81,28 @@ export const SkillsHeading = styled.h1`
     padding: 1rem 0 1rem 2rem;
     margin-left: 2rem;
   }
+`;
+
+export const Button = styled.button`
+  font-family: Sora-SemiBold;
+  font-weight: 600;
+  font-size: 1.15rem;
+  height: 30px;
+  width: 200px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  border: 2px solid ${primary};
+  color: ${secondary};
+  background-color: transparent;
+  transition: 0.375s all ease-in-out;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0 0;
 `;

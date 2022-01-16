@@ -31,8 +31,8 @@ export const Button = styled.a`
     position: absolute;
     border: 2px solid ${primary};
     transition: 0.375s all ease-in-out;
-    z-index: 1;
-    cursor: pointer;
+    /* z-index: 1; */
+    /* cursor: pointer; */
   }
 
   &::before {
