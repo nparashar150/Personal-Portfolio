@@ -165,8 +165,22 @@ export const ProjectPreview = styled.section`
   }
 `;
 
+export const ProjectHeadingWrapper= styled.div`
+  margin: 3rem 0 -4rem 0;
+
+  @media (max-width: 768px) {
+    margin: 7rem 0 -5rem 0;
+  }
+`;
+
 export const ProjectHeading = styled.h1`
   text-align: center;
   color: ${secondary};
   font-family: Sora-SemiBold;
+  padding: 0 0 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0 calc(10vw + 1rem);
+    text-align: left;
+  }
 `;
