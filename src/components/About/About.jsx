@@ -13,8 +13,9 @@ import {
 } from "./AboutElements";
 import AboutImageElement from "./Assets/AboutImage.png";
 import Fade from "react-reveal/Fade";
+import website from "../../data/website.json";
 
-const About = (props) => {
+const About = () => {
   return (
     <div id="about">
       <AboutSection>
@@ -28,7 +29,7 @@ const About = (props) => {
                 <AboutImage src={AboutImageElement} />
                 <AboutImageFilter />
               </AboutImageWrapper>
-              <AboutName value="Naman Parashar" size="1.35rem" />
+              <AboutName value={website[0].userName} size="1.35rem" />
             </Fade>
           </AboutLeft>
           <AboutRight>
@@ -37,17 +38,9 @@ const About = (props) => {
             </Fade>
             <Fade cascade>
               <AboutDetailWrapper>
-                <AboutDetail>
-                  Hello! My name is Naman Parashar, I am a budding Full Stack
-                  developer from India. My interest in Web Development started
-                  back in 2020 when I decided to contribute to ACE!
-                  <br /> <br />
-                  Right now I am pursuing Bachelor of Computer Application from
-                  Guru Gobind Singh Indraprastha University. I am looking for
-                  opportunities that will help me in growing my tech knowledge.I
-                  am still a learner who still needs to learn lot of new things.
-                  I love to code, watch anime and listen music.
-                </AboutDetail>
+                <AboutDetail
+                  dangerouslySetInnerHTML={{ __html: website[1].aboutUser }}
+                />
               </AboutDetailWrapper>
             </Fade>
           </AboutRight>

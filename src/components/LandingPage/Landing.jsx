@@ -2,13 +2,14 @@ import {
   HeadingWrapper,
   Heading,
   HeadingLarge,
-  InfoPara
+  InfoPara,
 } from "./LandingElements";
 import { Button } from "../Shared/Button/Button";
 import Lottie from "react-lottie";
 import animationData from "./lf30_NnBW3K.json";
 import Resume from "./Resume.pdf";
 import styled from "styled-components";
+import website from "../../data/website.json";
 
 const defaultOptions = {
   loop: true,
@@ -43,21 +44,21 @@ const LoadingWrapper = styled.a`
 const Landing = () => {
   const handleResumePdf = () => {
     window.open(Resume, "_blank");
-  }
+  };
   return (
     <>
       <HeadingWrapper>
         <Heading>
-          <span>Hi, my name is</span>
-          <HeadingLarge primary>Naman Parashar.</HeadingLarge>
-          <HeadingLarge>I am a Web Developer.</HeadingLarge>
+          <span>{website[0].greetingMessage}</span>
+          <HeadingLarge primary>{website[0].userName}</HeadingLarge>
+          <HeadingLarge>{website[0].userDomain}</HeadingLarge>
         </Heading>
-        <InfoPara>
-          I’m a Full Stack Developer from India. I have <br /> great intrest in
-          designing and coding for Web, I try <br /> to create great intuitive,
-          dynamic user <br /> experiences.
-        </InfoPara>
-        <Button value="Resume" onClick={handleResumePdf} size="1.3rem"></Button>
+        <InfoPara dangerouslySetInnerHTML={{ __html: website[0].userBrief }} />
+        <Button
+          value={website[0].heroButtonName}
+          onClick={handleResumePdf}
+          size="1.3rem"
+        ></Button>
       </HeadingWrapper>
       <LoadingWrapper href="#about" rel="noreferrer">
         <Lottie options={defaultOptions} width={50} height={50} />

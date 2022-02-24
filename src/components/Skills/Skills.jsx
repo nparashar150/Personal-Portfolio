@@ -8,8 +8,8 @@ import {
   Button,
   ButtonWrapper,
 } from "./SkillsElements";
-import SkillsData from "./SkillsData.json";
 import Fade from "react-reveal/Fade";
+import website from "../../data/website.json";
 
 const Skills = (props) => {
   let [skillsInfo, setSkillsInfo] = useState([]);
@@ -17,14 +17,14 @@ const Skills = (props) => {
   let [button, setButton] = useState(true);
 
   const showMoreItems = () => {
-    if (SkillsData.data.length > listSkills) {
+    if (website[2].data.length > listSkills) {
       setListSkills(listSkills + listSkills);
     }
   };
 
   const getSkillsInfo = useCallback(async () => {
-    SkillsData.data.length <= listSkills && setButton(false);
-    const SkillsShown = SkillsData.data.slice(0, listSkills);
+    website[2].data.length <= listSkills && setButton(false);
+    const SkillsShown = website[2].data.slice(0, listSkills);
     await setSkillsInfo(SkillsShown);
   }, [listSkills]);
 

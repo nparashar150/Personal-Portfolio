@@ -16,6 +16,7 @@ export const ProjectMainWrapper = styled.section`
   grid-template-rows: 15rem;
   grid-gap: 7rem;
   row-gap: 7rem;
+  height: 100vh;
   justify-content: center;
   align-items: start;
   justify-items: center;

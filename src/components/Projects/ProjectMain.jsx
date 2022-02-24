@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Project from "./Project";
-import { ProjectMainWrapper, ProjectHeadingWrapper, ProjectHeading } from "./ProjectElements";
-import ProjectData from "./ProjectData.json";
+import {
+  ProjectMainWrapper,
+  ProjectHeadingWrapper,
+  ProjectHeading,
+} from "./ProjectElements";
+import website from "../../data/website.json";
 
 const ProjectMain = (props) => {
   let [projectInfo, setProjectInfo] = useState([]);
   const getProjectInfo = async () => {
-    setProjectInfo(await ProjectData.data);
+    setProjectInfo(await website[3].data);
     // console.log();
   };
 
@@ -16,7 +20,7 @@ const ProjectMain = (props) => {
 
   return (
     <>
-    <ProjectHeadingWrapper>
+      <ProjectHeadingWrapper>
         <ProjectHeading>Projects</ProjectHeading>
       </ProjectHeadingWrapper>
       <ProjectMainWrapper id={props.id}>
