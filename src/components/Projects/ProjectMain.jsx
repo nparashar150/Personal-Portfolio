@@ -1,22 +1,34 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Project from './Project'
 import {
   ProjectMainWrapper,
   ProjectHeadingWrapper,
-  ProjectHeading
+  ProjectHeading,
+  ButtonWrapper
 } from './ProjectElements'
+import { Button } from '../Skills/SkillsElements'
 import website from '../../data/website.json'
 
 const ProjectMain = (props) => {
   let [projectInfo, setProjectInfo] = useState([])
-  const getProjectInfo = async () => {
-    setProjectInfo(await website[3].data)
-    // console.log();
+  let [listProjects, setListProjects] = useState(4)
+  let [button, setButton] = useState(true)
+
+  const getProjectInfo = useCallback(async () => {
+    website[3].data.length <= listProjects && setButton(false)
+    const ProjectShown = website[3].data.slice(0, listProjects)
+    await setProjectInfo(ProjectShown)
+  }, [listProjects])
+
+  const showMoreItems = () => {
+    if (website[3].data.length > listProjects) {
+      setListProjects(listProjects + listProjects)
+    }
   }
 
   useEffect(() => {
     getProjectInfo()
-  }, [])
+  }, [getProjectInfo])
 
   return (
     <>
@@ -36,6 +48,9 @@ const ProjectMain = (props) => {
           )
         })}
       </ProjectMainWrapper>
+      <ButtonWrapper>
+        {button && <Button onClick={() => showMoreItems()}>Show More</Button>}
+      </ButtonWrapper>
     </>
   )
 }

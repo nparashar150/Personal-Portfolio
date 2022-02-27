@@ -2,21 +2,12 @@ import styled from 'styled-components'
 import { backgroundDark, primary, secondary } from '../Shared/colorScheme'
 import { Link } from 'react-router-dom'
 export const ProjectMainWrapper = styled.section`
-  /* display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 50vw;
-  position: absolute;
-  margin-left: 15vw;
-  height: 100vh; */
   display: grid;
-  grid-template-columns: 25rem 25rem;
-  grid-template-rows: 15rem;
+  grid-template-columns: repeat(2, 25rem);
+  /* grid-template-rows: repeat(2, 15rem); */
   grid-gap: 7rem;
   row-gap: 7rem;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   align-items: start;
   justify-items: center;
@@ -24,22 +15,15 @@ export const ProjectMainWrapper = styled.section`
   z-index: 5;
 
   @media (max-width: 768px) {
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100vw;
-    flex-wrap: nowrap; */
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-template-rows: repeat(30vh);
     grid-gap: 0;
-    row-gap: 0;
+    row-gap: 3rem;
     justify-content: end;
-    /* justify-items: center; */
     align-items: center;
     height: 100%;
-    padding-left: 0;
+    padding: 6rem 0 5rem 0rem;
   }
 `
 
@@ -50,7 +34,6 @@ export const ProjectWrapper = styled(Link)`
   flex-direction: column;
   color: ${secondary};
   cursor: pointer;
-  position: absolute;
   text-decoration: none;
 
   &:hover,
@@ -168,7 +151,7 @@ export const ProjectPreview = styled.section`
 
 export const ProjectHeadingWrapper = styled.div`
   margin-top: 5rem;
-  padding-bottom: calc(2rem + 7vh);
+  margin-bottom: -2rem;
 
   @media (max-width: 768px) {
     padding-bottom: 0;
@@ -185,5 +168,17 @@ export const ProjectHeading = styled.h1`
   @media (max-width: 768px) {
     padding: 0 calc(10vw + 1rem);
     text-align: left;
+  }
+`
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    margin: -2rem 0 2rem 0;
   }
 `

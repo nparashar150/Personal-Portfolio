@@ -13,7 +13,7 @@ import website from '../../data/website.json'
 
 const Skills = (props) => {
   let [skillsInfo, setSkillsInfo] = useState([])
-  let [listSkills, setListSkills] = useState(6)
+  let [listSkills, setListSkills] = useState(8)
   let [button, setButton] = useState(true)
 
   const showMoreItems = () => {
