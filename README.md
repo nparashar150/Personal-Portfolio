@@ -13,33 +13,40 @@ If you find anything buggy you can report it to me.
 
 ## Directory Structure 
 ```.
-├── .gitignore
-├── README.md
+➜  Personal-Portfolio git:(frontend) tree -I "node_modules|build|public|.cache|.firebase|netlify"
+.
 ├── package.json
+├── README.md
+├── screenshots
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   └── 5.png
 ├── src
+│   ├── animation
+│   │   ├── lf30_editor_c1tvetoa.json
+│   │   └── Loading.jsx
 │   ├── App.css
 │   ├── App.jsx
-│   ├── animation
-│   │   ├── Loading.jsx
-│   │   └── lf30_editor_c1tvetoa.json
 │   ├── components
 │   │   ├── About
-│   │   │   ├── About.jsx
 │   │   │   ├── AboutElements.jsx
+│   │   │   ├── About.jsx
 │   │   │   └── Assets
 │   │   │       └── AboutImage.png
 │   │   ├── Contact
-│   │   │   ├── Contact.jsx
 │   │   │   ├── ContactElements.jsx
+│   │   │   ├── Contact.jsx
 │   │   │   └── lf30_editor_lrfkphqf.json
 │   │   ├── LandingPage
-│   │   │   ├── Landing.jsx
 │   │   │   ├── LandingElements.jsx
-│   │   │   └── lf30_NnBW3K.json
+│   │   │   ├── Landing.jsx
+│   │   │   ├── lf30_NnBW3K.json
+│   │   │   └── Resume.pdf
 │   │   ├── Projects
-│   │   │   ├── Project.jsx
-│   │   │   ├── ProjectData.json
 │   │   │   ├── ProjectElements.jsx
+│   │   │   ├── Project.jsx
 │   │   │   ├── ProjectLogo
 │   │   │   │   ├── AmazonKindle.png
 │   │   │   │   ├── ColtEnigma.png
@@ -47,23 +54,25 @@ If you find anything buggy you can report it to me.
 │   │   │   │   └── StartMenu.svg
 │   │   │   └── ProjectMain.jsx
 │   │   ├── Shared
-│   │   │   ├── BackToHome
-│   │   │   │   └── BackToHome.jsx
 │   │   │   ├── Button
 │   │   │   │   └── Button.jsx
+│   │   │   ├── colorScheme.jsx
 │   │   │   ├── Email
 │   │   │   │   └── Email.jsx
 │   │   │   ├── Footer
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   └── FooterElements.jsx
-│   │   │   ├── Nav
-│   │   │   │   ├── Nav.jsx
-│   │   │   │   └── NavElements.jsx
-│   │   │   └── colorScheme.jsx
+│   │   │   │   ├── FooterElements.jsx
+│   │   │   │   └── Footer.jsx
+│   │   │   ├── Mouse
+│   │   │   │   ├── Mouse.js
+│   │   │   │   └── Mouse.scss
+│   │   │   └── Nav
+│   │   │       ├── NavElements.jsx
+│   │   │       └── Nav.jsx
 │   │   └── Skills
-│   │       ├── Skills.jsx
-│   │       ├── SkillsData.json
-│   │       └── SkillsElements.jsx
+│   │       ├── SkillsElements.jsx
+│   │       └── Skills.jsx
+│   ├── data
+│   │   └── website.json
 │   ├── font
 │   │   ├── Sora-Bold.ttf
 │   │   ├── Sora-ExtraBold.ttf
@@ -75,14 +84,16 @@ If you find anything buggy you can report it to me.
 │   │   └── Sora-Thin.ttf
 │   ├── index.css
 │   ├── index.jsx
-│   └── page
-│       ├── AboutPage
-│       │   ├── About.jsx
-│       │   └── AboutElements.jsx
-│       └── LandingPage
-│           ├── Main.jsx
-│           └── MainElements.jsx
+│   ├── page
+│   │   └── LandingPage
+│   │       ├── MainElements.jsx
+│   │       ├── Main.jsx
+│   │       └── ParticleConfig.json
+│   ├── service-worker.js
+│   └── serviceWorkerRegistration.js
 └── yarn.lock
+
+21 directories, 56 files
 ```
 <br>
 
