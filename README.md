@@ -106,6 +106,8 @@ If you find anything buggy you can report it to me.
 5) Styled Components
 6) Lottie Animation
 7) Email JS
+8) Hotjar
+9) Google Analytics
 
 <br>
 
