@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { secondary, backgroundDark, primary } from "../Shared/colorScheme";
+import styled, { css } from 'styled-components'
+import { secondary, backgroundDark, primary } from '../Shared/colorScheme'
 
 export const AboutSection = styled.section`
   display: flex;
@@ -18,7 +18,7 @@ export const AboutSection = styled.section`
     padding: 1rem 0 2rem 0;
     justify-content: center;
   }
-`;
+`
 
 export const AboutWrapper = styled.div`
   display: grid;
@@ -37,10 +37,9 @@ export const AboutWrapper = styled.div`
     width: 100vw;
     grid-gap: 5vh;
   }
-`;
+`
 
-export const AboutLines = styled.div`
-`;
+export const AboutLines = styled.div``
 
 export const AboutImageWrapper = styled.div`
   display: flex;
@@ -54,26 +53,25 @@ export const AboutImageWrapper = styled.div`
   height: 18rem;
   position: relative;
 
-
   &:hover,
   &:focus {
     color: ${secondary};
   }
 
-  &::before, 
+  &::before,
   &::after {
-    content: "";
+    content: '';
     width: 18rem;
     height: 18rem;
     position: absolute;
     z-index: 1;
-    border: 2px solid ${ primary };
-    transition: 0.375s all ease-in-out ;
+    border: 2px solid ${primary};
+    transition: 0.375s all ease-in-out;
   }
 
   &::before {
     transform: translate(10px, 10px);
-    border: 2px solid ${ secondary };
+    border: 2px solid ${secondary};
     z-index: 0;
   }
 
@@ -93,16 +91,16 @@ export const AboutImageWrapper = styled.div`
 
     &::before,
     &::after {
-    width: 75vw;
-    height: 75vw;      
+      width: 75vw;
+      height: 75vw;
     }
   }
-`;
+`
 
 export const AboutImageFilter = styled.div`
   width: 18rem;
   height: 18rem;
-  /* background: ${primary+"75"}; */
+  /* background: ${primary + '75'}; */
   transition: 0.375s all ease-in-out;
   z-index: 10;
 
@@ -115,7 +113,7 @@ export const AboutImageFilter = styled.div`
     width: 75vw;
     height: 75vw;
   }
-`;
+`
 
 export const AboutImage = styled.img`
   width: 18rem;
@@ -127,7 +125,7 @@ export const AboutImage = styled.img`
     width: 75vw;
     height: 75vw;
   }
-`;
+`
 
 export const AboutName = styled.div`
   color: ${secondary};
@@ -156,13 +154,13 @@ export const AboutName = styled.div`
   }
 
   &::before {
-    content: "";
+    content: '';
     transform: translate(10px, 10px);
     border: 2px solid ${secondary};
   }
   &::after {
     background: ${backgroundDark};
-    content: "${(props) => props.value}";
+    content: '${(props) => props.value}';
   }
 
   &:hover::before,
@@ -173,7 +171,7 @@ export const AboutName = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const AboutHeading = styled.h1`
   font-family: Sora-SemiBold;
@@ -181,12 +179,12 @@ export const AboutHeading = styled.h1`
   font-size: 2rem;
   grid-area: heading;
   text-align: left;
-  
+
   @media (max-width: 768px) {
     width: 100vw;
     padding: 1rem 0.5rem;
   }
-`;
+`
 
 export const AboutDetailWrapper = styled.div`
   width: 100%;
@@ -194,14 +192,14 @@ export const AboutDetailWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const AboutDetail = styled.p`
   width: 100%;
   height: 100%;
   text-align: left;
   font-family: Sora-Light;
-  font-size: 1.10rem;
+  font-size: 1.1rem;
   padding: 0 3rem;
   color: ${secondary};
   letter-spacing: 0.05mm;
@@ -210,7 +208,7 @@ export const AboutDetail = styled.p`
     width: 100vw;
     padding: 0 10vw;
   }
-`;
+`
 
 export const AboutLeft = styled.div`
   display: grid;
@@ -232,10 +230,10 @@ export const AboutLeft = styled.div`
     padding: 0 0 0 10vw;
 
     ${AboutHeading} {
-    display: block;
+      display: block;
     }
   }
-`;
+`
 
 export const AboutRight = styled.div`
   display: flex;
@@ -247,12 +245,12 @@ export const AboutRight = styled.div`
   gap: 2rem;
 
   @media (max-width: 768px) {
-    width:  100vw;
+    width: 100vw;
     height: 100%;
     gap: 1rem;
 
     ${AboutHeading} {
-    display: none;
+      display: none;
     }
   }
-`;
+`

@@ -8,42 +8,42 @@
 
 @font-face {
   font-family: Sora-Bold;
-  src: url("./font/Sora-Bold.ttf");
+  src: url('./font/Sora-Bold.ttf');
 }
 
 @font-face {
   font-family: Sora-ExtraLight;
-  src: url("./font/Sora-ExtraBold.ttf");
+  src: url('./font/Sora-ExtraBold.ttf');
 }
 
 @font-face {
   font-family: Sora-ExtraLight;
-  src: url("./font/Sora-ExtraLight.ttf");
+  src: url('./font/Sora-ExtraLight.ttf');
 }
 
 @font-face {
   font-family: Sora-Light;
-  src: url("./font/Sora-Light.ttf");
+  src: url('./font/Sora-Light.ttf');
 }
 
 @font-face {
   font-family: Sora-Medium;
-  src: url("./font/Sora-Medium.ttf");
+  src: url('./font/Sora-Medium.ttf');
 }
 
 @font-face {
   font-family: Sora-Regular;
-  src: url("./font/Sora-Regular.ttf");
+  src: url('./font/Sora-Regular.ttf');
 }
 
 @font-face {
   font-family: Sora-SemiBold;
-  src: url("./font/Sora-SemiBold.ttf");
+  src: url('./font/Sora-SemiBold.ttf');
 }
 
 @font-face {
   font-family: Sora-Thin;
-  src: url("./font/Sora-Thin.ttf");
+  src: url('./font/Sora-Thin.ttf');
 }
 
 body {

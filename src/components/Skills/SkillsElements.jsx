@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { primary, secondary } from "../Shared/colorScheme";
+import styled from 'styled-components'
+import { primary, secondary } from '../Shared/colorScheme'
 
 export const SkillsSectionWrapper = styled.section`
   display: flex;
@@ -13,7 +13,7 @@ export const SkillsSectionWrapper = styled.section`
   @media (max-width: 768px) {
     height: 100%;
   }
-`;
+`
 
 export const SkillsWrapper = styled.section`
   display: grid;
@@ -27,7 +27,7 @@ export const SkillsWrapper = styled.section`
     grid-template-columns: 80vw;
     padding: 0;
   }
-`;
+`
 
 export const SkillName = styled.div`
   width: 25rem;
@@ -39,7 +39,7 @@ export const SkillName = styled.div`
   @media (max-width: 768px) {
     width: 80vw;
   }
-`;
+`
 
 export const SkillsFilter = styled.div`
   width: ${(props) => props.width};
@@ -47,7 +47,7 @@ export const SkillsFilter = styled.div`
   width: 100%;
   background: linear-gradient(
     90deg,
-    ${primary + "50"} ${(props) => props.width},
+    ${primary + '50'} ${(props) => props.width},
     transparent ${(props) => props.widthLeft}
   );
   z-index: 5;
@@ -62,11 +62,11 @@ export const SkillsFilter = styled.div`
   &:focus {
     background: linear-gradient(
       90deg,
-      ${primary + "75"} ${(props) => props.width},
+      ${primary + '75'} ${(props) => props.width},
       transparent ${(props) => props.widthLeft}
     );
   }
-`;
+`
 
 export const SkillsHeading = styled.h1`
   color: ${secondary};
@@ -81,7 +81,7 @@ export const SkillsHeading = styled.h1`
     padding: 1rem 0 1rem 2rem;
     margin-left: 2rem;
   }
-`;
+`
 
 export const Button = styled.button`
   font-family: Sora-SemiBold;
@@ -98,11 +98,11 @@ export const Button = styled.button`
   color: ${secondary};
   background-color: transparent;
   transition: 0.375s all ease-in-out;
-`;
+`
 
 export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0 0 0;
-`;
+`

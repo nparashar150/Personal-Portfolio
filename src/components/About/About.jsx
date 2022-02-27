@@ -9,11 +9,11 @@ import {
   AboutLeft,
   AboutRight,
   AboutDetailWrapper,
-  AboutDetail,
-} from "./AboutElements";
-import AboutImageElement from "./Assets/AboutImage.png";
-import Fade from "react-reveal/Fade";
-import website from "../../data/website.json";
+  AboutDetail
+} from './AboutElements'
+import AboutImageElement from './Assets/AboutImage.png'
+import Fade from 'react-reveal/Fade'
+import website from '../../data/website.json'
 
 const About = () => {
   return (
@@ -47,7 +47,7 @@ const About = () => {
         </AboutWrapper>
       </AboutSection>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

@@ -1,17 +1,21 @@
 # Personal Portfolio Website 👨‍💻
+
 Hello there, welcome to the repository of my Personal Portfolio Website!! <br>
 This is still a work in progress, and I like to update it whenever I get free time. <br>
 I would suggest to read [README.md](./README.md) first and then proceed with exploring the repository. <br>
 If you find anything buggy you can report it to me.
+
 ## Screenshots
-![Homepage](/screenshots/1.png "Homepage")
-![About](/screenshots/2.png "About")
-![Skills](/screenshots/3.png "Skills")
-![Projects](/screenshots/4.png "Projects")
-![Contact](/screenshots/5.png "Contact")
+
+![Homepage](/screenshots/1.png 'Homepage')
+![About](/screenshots/2.png 'About')
+![Skills](/screenshots/3.png 'Skills')
+![Projects](/screenshots/4.png 'Projects')
+![Contact](/screenshots/5.png 'Contact')
 <br>
 
-## Directory Structure 
+## Directory Structure
+
 ```.
 ➜  Personal-Portfolio git:(frontend) tree -I "node_modules|build|public|.cache|.firebase|netlify"
 .
@@ -95,19 +99,20 @@ If you find anything buggy you can report it to me.
 
 21 directories, 56 files
 ```
+
 <br>
 
 ## Tools/Technologies Used
 
-1) React JS
-2) React Scroll
-3) React Reveal
-4) React Helmet
-5) Styled Components
-6) Lottie Animation
-7) Email JS
-8) Hotjar
-9) Google Analytics
+1. React JS
+2. React Scroll
+3. React Reveal
+4. React Helmet
+5. Styled Components
+6. Lottie Animation
+7. Email JS
+8. Hotjar
+9. Google Analytics
 
 <br>
 

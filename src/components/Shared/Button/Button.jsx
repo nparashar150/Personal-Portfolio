@@ -1,8 +1,8 @@
-import styled, { css, keyframes } from "styled-components";
-import { background, backgroundDark, primary, secondary } from "../colorScheme";
-import { fadeInDown } from "react-animations"; 
+import styled, { css, keyframes } from 'styled-components'
+import { background, backgroundDark, primary, secondary } from '../colorScheme'
+import { fadeInDown } from 'react-animations'
 
-const ButtonAnimation = keyframes`${fadeInDown}`;
+const ButtonAnimation = keyframes`${fadeInDown}`
 
 export const Button = styled.a`
   background: ${background};
@@ -36,13 +36,13 @@ export const Button = styled.a`
   }
 
   &::before {
-    content: "";
+    content: '';
     border: 2px solid ${secondary};
     transform: translate(7px, 7px);
   }
   &::after {
     background: ${backgroundDark};
-    content: "${(props) => props.value}";
+    content: '${(props) => props.value}';
   }
 
   &:hover::before,
@@ -50,4 +50,4 @@ export const Button = styled.a`
     transform: translate(0px, 0px);
     border: 2px solid ${secondary};
   }
-`;
+`

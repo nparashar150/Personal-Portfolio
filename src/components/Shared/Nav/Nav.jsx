@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react'
 import {
   NavWrapper,
   NavWrapperMobile,
@@ -7,37 +7,36 @@ import {
   NavSocialIcons,
   NavImage,
   NavMobile,
-  NavMobileBar,
-} from "./NavElements";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
-import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram";
-import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
-import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu";
-import { animateScroll as scroll } from "react-scroll";
+  NavMobileBar
+} from './NavElements'
+import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram'
+import { AiOutlineClose } from '@react-icons/all-files/ai/AiOutlineClose'
+import { AiOutlineMenu } from '@react-icons/all-files/ai/AiOutlineMenu'
+import { animateScroll as scroll } from 'react-scroll'
 
 const toggleHome = () => {
-  scroll.scrollToTop();
-};
+  scroll.scrollToTop()
+}
 const Nav = () => {
-  let [toggleNav, setToggleNav] = useState(false);
+  let [toggleNav, setToggleNav] = useState(false)
 
   const toggleNavItem = () => {
     if (window.screen.width <= 768) {
-      setToggleNav(!toggleNav);
+      setToggleNav(!toggleNav)
     } else {
-
     }
   }
 
   useEffect(() => {
-    window.screen.width >= 768 ? setToggleNav(true) : setToggleNav(false);
-  }, []);
-  
+    window.screen.width >= 768 ? setToggleNav(true) : setToggleNav(false)
+  }, [])
+
   const showHide = {
-    display: toggleNav ? "block" : "none",
-    transition: "all 0.375s ease-in-out",
-  };
+    display: toggleNav ? 'block' : 'none',
+    transition: 'all 0.375s ease-in-out'
+  }
 
   return (
     <>
@@ -135,7 +134,7 @@ const Nav = () => {
         </NavElements>
       </NavWrapper>
     </>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

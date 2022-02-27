@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
+import { Link } from 'react-router-dom'
+import styled, { keyframes } from 'styled-components'
 import {
   backgroundDark,
   hightlightBlue,
   primary,
-  secondary,
-} from "../colorScheme";
-import { fadeInLeft } from "react-animations";
+  secondary
+} from '../colorScheme'
+import { fadeInLeft } from 'react-animations'
 
-const NavAnimation = keyframes`${fadeInLeft}`;
+const NavAnimation = keyframes`${fadeInLeft}`
 
 export const NavWrapper = styled.nav`
   background: ${backgroundDark};
@@ -50,7 +50,7 @@ export const NavWrapper = styled.nav`
       width: 100vw;
     }
   }
-`;
+`
 
 export const NavWrapperMobile = styled.div`
   display: none;
@@ -64,7 +64,7 @@ export const NavWrapperMobile = styled.div`
   @media (max-width: 768px) {
     display: block;
   }
-`;
+`
 
 export const NavElements = styled.div`
   align-items: center;
@@ -72,7 +72,7 @@ export const NavElements = styled.div`
   display: flex;
   position: absolute;
   flex-direction: column;
-  font-family: "Sora-Light";
+  font-family: 'Sora-Light';
   font-size: 0.9rem;
   justify-content: center;
   height: 100vh;
@@ -104,7 +104,7 @@ export const NavElements = styled.div`
       width: 100vw;
     }
   }
-`;
+`
 
 export const NavLinks = styled.a`
   border: 1px solid ${secondary};
@@ -137,24 +137,24 @@ export const NavLinks = styled.a`
     transition: 0.375s ease-in-out;
   }
 
-    @media (max-width: 1024px) {
-      width: 10vw;
+  @media (max-width: 1024px) {
+    width: 10vw;
 
-      &:hover,
-      &:focus {
-        width: 13vw;
-      }
+    &:hover,
+    &:focus {
+      width: 13vw;
     }
+  }
 
-    @media (max-width: 768px) {
-      width: 49.5vw;
+  @media (max-width: 768px) {
+    width: 49.5vw;
 
-      &:hover,
-      &:focus {
-        width: 98vw;
-      }
+    &:hover,
+    &:focus {
+      width: 98vw;
     }
-`;
+  }
+`
 
 export const NavSocialIcons = styled.div`
   position: absolute;
@@ -220,7 +220,7 @@ export const NavSocialIcons = styled.div`
       }
     }
   }
-`;
+`
 
 export const NavImage = styled(Link)`
   width: 5rem;
@@ -273,7 +273,7 @@ export const NavImage = styled(Link)`
       }
     }
   }
-`;
+`
 
 export const NavMobile = styled.button`
   background: ${backgroundDark};
@@ -301,7 +301,7 @@ export const NavMobile = styled.button`
   @media (max-width: 768px) {
     display: block;
   }
-`;
+`
 
 export const NavMobileBar = styled.nav`
   position: fixed;
@@ -314,7 +314,7 @@ export const NavMobileBar = styled.nav`
   align-items: center;
   flex-direction: row;
   background: ${backgroundDark};
-  filter: drop-shadow(0 0 5px ${primary + "75"});
+  filter: drop-shadow(0 0 5px ${primary + '75'});
 
   @media (max-width: 768px) {
     display: flex;
@@ -343,4 +343,4 @@ export const NavMobileBar = styled.nav`
       color: ${primary};
     }
   }
-`;
+`

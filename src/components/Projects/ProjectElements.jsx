@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { backgroundDark, primary, secondary } from "../Shared/colorScheme";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { backgroundDark, primary, secondary } from '../Shared/colorScheme'
+import { Link } from 'react-router-dom'
 export const ProjectMainWrapper = styled.section`
   /* display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ export const ProjectMainWrapper = styled.section`
     align-items: center;
     padding-left: 0;
   }
-`;
+`
 
 export const ProjectWrapper = styled(Link)`
   display: flex;
@@ -57,20 +57,20 @@ export const ProjectWrapper = styled(Link)`
     color: ${secondary};
   }
 
-  &::before, 
+  &::before,
   &::after {
-    content: "";
+    content: '';
     width: 25rem;
     height: 15rem;
     position: absolute;
     z-index: 1;
-    border: 2px solid ${ primary };
-    transition: 0.375s all ease-in-out ;
+    border: 2px solid ${primary};
+    transition: 0.375s all ease-in-out;
   }
 
   &::before {
     transform: translate(7px, 7px);
-    border: 2px solid ${ secondary };
+    border: 2px solid ${secondary};
     z-index: 0;
   }
 
@@ -79,13 +79,13 @@ export const ProjectWrapper = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    &::before, 
+    &::before,
     &::after {
       width: 80vw;
       height: 25vh;
     }
   }
-`;
+`
 
 export const ProjectImage = styled.img`
   width: 2.5rem;
@@ -94,10 +94,10 @@ export const ProjectImage = styled.img`
   background: transparent;
 
   @media (max-width: 768px) {
-      width: 2rem;
-      height: 2rem;
+    width: 2rem;
+    height: 2rem;
   }
-`;
+`
 export const ProjectName = styled.div`
   font-size: 1.75rem;
   font-family: Sora-SemiBold;
@@ -105,7 +105,7 @@ export const ProjectName = styled.div`
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }
-`;
+`
 export const ProjectDetail = styled.section`
   opacity: 0;
   display: flex;
@@ -128,12 +128,12 @@ export const ProjectDetail = styled.section`
     width: 80vw;
     height: 25vh;
   }
-`;
+`
 
 export const ProjectDataDetail = styled.p`
   font-family: Sora-Light;
   padding: 0 10px;
-`;
+`
 
 export const ProjectPreview = styled.section`
   display: flex;
@@ -144,9 +144,9 @@ export const ProjectPreview = styled.section`
   z-index: 3;
   width: 25rem;
   height: 15rem;
-  background: ${primary + "50"};
-  transition: .375s all ease-in-out;
-  
+  background: ${primary + '50'};
+  transition: 0.375s all ease-in-out;
+
   &:hover,
   &:focus {
     margin-top: -25px;
@@ -154,19 +154,18 @@ export const ProjectPreview = styled.section`
     background: transparent;
   }
 
-  &:hover + ${ProjectDetail},
-  &:focus + ${ProjectDetail} {
+  &:hover + ${ProjectDetail}, &:focus + ${ProjectDetail} {
     opacity: 1;
     margin-bottom: 0px;
   }
 
   @media (max-width: 768px) {
-      width: 80vw;
-      height: 25vh;
+    width: 80vw;
+    height: 25vh;
   }
-`;
+`
 
-export const ProjectHeadingWrapper= styled.div`
+export const ProjectHeadingWrapper = styled.div`
   margin-top: 5rem;
   padding-bottom: calc(2rem + 7vh);
 
@@ -174,7 +173,7 @@ export const ProjectHeadingWrapper= styled.div`
     padding-bottom: 0;
     margin: 7rem 0 -5rem 0;
   }
-`;
+`
 
 export const ProjectHeading = styled.h1`
   text-align: center;
@@ -186,4 +185,4 @@ export const ProjectHeading = styled.h1`
     padding: 0 calc(10vw + 1rem);
     text-align: left;
   }
-`;
+`

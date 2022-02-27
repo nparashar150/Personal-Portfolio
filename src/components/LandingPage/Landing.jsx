@@ -2,25 +2,25 @@ import {
   HeadingWrapper,
   Heading,
   HeadingLarge,
-  InfoPara,
-} from "./LandingElements";
-import { Button } from "../Shared/Button/Button";
-import Lottie from "react-lottie";
-import animationData from "./lf30_NnBW3K.json";
-import Resume from "./Resume.pdf";
-import styled from "styled-components";
-import website from "../../data/website.json";
+  InfoPara
+} from './LandingElements'
+import { Button } from '../Shared/Button/Button'
+import Lottie from 'react-lottie'
+import animationData from './lf30_NnBW3K.json'
+import Resume from './Resume.pdf'
+import styled from 'styled-components'
+import website from '../../data/website.json'
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  name: "Loading Animation",
-  render: "svg",
+  name: 'Loading Animation',
+  render: 'svg',
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
+    preserveAspectRatio: 'xMidYMid slice'
+  }
+}
 
 const LoadingWrapper = styled.a`
   position: absolute;
@@ -39,12 +39,12 @@ const LoadingWrapper = styled.a`
   @media (max-width: 320px), (max-height: 630px) {
     display: none;
   }
-`;
+`
 
 const Landing = () => {
   const handleResumePdf = () => {
-    window.open(Resume, "_blank");
-  };
+    window.open(Resume, '_blank')
+  }
   return (
     <>
       <HeadingWrapper>
@@ -64,7 +64,7 @@ const Landing = () => {
         <Lottie options={defaultOptions} width={50} height={50} />
       </LoadingWrapper>
     </>
-  );
-};
+  )
+}
 
-export default Landing;
+export default Landing

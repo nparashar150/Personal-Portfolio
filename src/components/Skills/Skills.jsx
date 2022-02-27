@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from 'react'
 import {
   SkillsSectionWrapper,
   SkillsWrapper,
@@ -6,31 +6,31 @@ import {
   SkillsFilter,
   SkillsHeading,
   Button,
-  ButtonWrapper,
-} from "./SkillsElements";
-import Fade from "react-reveal/Fade";
-import website from "../../data/website.json";
+  ButtonWrapper
+} from './SkillsElements'
+import Fade from 'react-reveal/Fade'
+import website from '../../data/website.json'
 
 const Skills = (props) => {
-  let [skillsInfo, setSkillsInfo] = useState([]);
-  let [listSkills, setListSkills] = useState(6);
-  let [button, setButton] = useState(true);
+  let [skillsInfo, setSkillsInfo] = useState([])
+  let [listSkills, setListSkills] = useState(6)
+  let [button, setButton] = useState(true)
 
   const showMoreItems = () => {
     if (website[2].data.length > listSkills) {
-      setListSkills(listSkills + listSkills);
+      setListSkills(listSkills + listSkills)
     }
-  };
+  }
 
   const getSkillsInfo = useCallback(async () => {
-    website[2].data.length <= listSkills && setButton(false);
-    const SkillsShown = website[2].data.slice(0, listSkills);
-    await setSkillsInfo(SkillsShown);
-  }, [listSkills]);
+    website[2].data.length <= listSkills && setButton(false)
+    const SkillsShown = website[2].data.slice(0, listSkills)
+    await setSkillsInfo(SkillsShown)
+  }, [listSkills])
 
   useEffect(() => {
-    getSkillsInfo();
-  }, [getSkillsInfo]);
+    getSkillsInfo()
+  }, [getSkillsInfo])
 
   return (
     <>
@@ -49,17 +49,15 @@ const Skills = (props) => {
                   </SkillsFilter>
                 </SkillName>
               </Fade>
-            );
+            )
           })}
         </SkillsWrapper>
         <ButtonWrapper>
-            {button && (
-              <Button onClick={() => showMoreItems()}>Show More</Button>
-            )}
-          </ButtonWrapper>
+          {button && <Button onClick={() => showMoreItems()}>Show More</Button>}
+        </ButtonWrapper>
       </SkillsSectionWrapper>
     </>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

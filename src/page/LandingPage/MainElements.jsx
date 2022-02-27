@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const MainWrapper = styled.div`
   display: grid;
@@ -15,9 +15,9 @@ export const MainWrapper = styled.div`
     align-items: flex-start;
     flex-direction: column;
   }
-`;
+`
 
 export const Wrapper = styled.div`
   position: absolute;
   z-index: 5;
-`;
+`

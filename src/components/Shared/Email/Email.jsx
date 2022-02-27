@@ -1,8 +1,8 @@
-import styled, { keyframes } from "styled-components";
-import { backgroundDark, primary, secondary } from "../colorScheme";
-import { bounceInDown } from 'react-animations';
+import styled, { keyframes } from 'styled-components'
+import { backgroundDark, primary, secondary } from '../colorScheme'
+import { bounceInDown } from 'react-animations'
 
-const bounceAnimation = keyframes`${bounceInDown}`;
+const bounceAnimation = keyframes`${bounceInDown}`
 
 export const EmailWrapper = styled.div`
   display: flex;
@@ -20,12 +20,12 @@ export const EmailWrapper = styled.div`
   top: 0;
   right: -1.75%;
   z-index: 5;
-  
+
   &:hover,
   &:focus {
     margin-top: -15px;
   }
-`;
+`
 
 export const EmailComponent = styled.a`
   cursor: pointer;
@@ -36,20 +36,20 @@ export const EmailComponent = styled.a`
   line-height: 3rem;
   text-decoration: none;
   color: ${secondary};
-  
+
   &::after {
     width: 18rem;
     height: 3rem;
     outline: 2px solid ${primary};
     transform: rotate(90deg);
     background: ${backgroundDark};
-    content: "${(props) => props.value}";
+    content: '${(props) => props.value}';
     display: block;
     margin-top: -3rem;
     transition: 0.375s all ease-in-out;
   }
   &::before {
-    content: "";
+    content: '';
     width: 18rem;
     height: 3rem;
     outline: 2px solid ${secondary};
@@ -61,7 +61,7 @@ export const EmailComponent = styled.a`
   &:hover::before,
   &:focus::before {
     transform: translate(0px, 0px) rotate(90deg);
-    background: ${secondary + "13"};
+    background: ${secondary + '13'};
   }
 
   &:hover::after,
@@ -72,7 +72,7 @@ export const EmailComponent = styled.a`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const EmailLine = styled.div`
   border-right: 2px solid ${primary};
@@ -81,4 +81,4 @@ export const EmailLine = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`

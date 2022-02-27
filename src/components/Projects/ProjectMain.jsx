@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
-import Project from "./Project";
+import React, { useState, useEffect } from 'react'
+import Project from './Project'
 import {
   ProjectMainWrapper,
   ProjectHeadingWrapper,
-  ProjectHeading,
-} from "./ProjectElements";
-import website from "../../data/website.json";
+  ProjectHeading
+} from './ProjectElements'
+import website from '../../data/website.json'
 
 const ProjectMain = (props) => {
-  let [projectInfo, setProjectInfo] = useState([]);
+  let [projectInfo, setProjectInfo] = useState([])
   const getProjectInfo = async () => {
-    setProjectInfo(await website[3].data);
+    setProjectInfo(await website[3].data)
     // console.log();
-  };
+  }
 
   useEffect(() => {
-    getProjectInfo();
-  }, []);
+    getProjectInfo()
+  }, [])
 
   return (
     <>
@@ -33,11 +33,11 @@ const ProjectMain = (props) => {
               to={{ pathname: element.link }}
               key={key}
             />
-          );
+          )
         })}
       </ProjectMainWrapper>
     </>
-  );
-};
+  )
+}
 
-export default ProjectMain;
+export default ProjectMain

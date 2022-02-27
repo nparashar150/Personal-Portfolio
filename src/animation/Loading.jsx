@@ -4,14 +4,14 @@ import styled from 'styled-components'
 import animationData from './lf30_editor_c1tvetoa.json'
 import { backgroundDark } from '../components/Shared/colorScheme'
 
-const defaultOptions = { 
+const defaultOptions = {
   loop: true,
   autoplay: true,
-  name: "Loading Animation",
-  render: "svg",
+  name: 'Loading Animation',
+  render: 'svg',
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
+    preserveAspectRatio: 'xMidYMid slice'
   }
 }
 
@@ -22,13 +22,13 @@ const LoadingWrapper = styled.div`
   width: 100vw;
   height: 100vh;
   background: ${backgroundDark};
-` 
+`
 
 const Loading = () => {
   return (
     <>
       <LoadingWrapper>
-        <Lottie options={ defaultOptions } width={ 212 } height={ 212 } />
+        <Lottie options={defaultOptions} width={212} height={212} />
       </LoadingWrapper>
     </>
   )

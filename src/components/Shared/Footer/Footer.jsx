@@ -1,12 +1,10 @@
-import { FooterText, FooterWrapper } from "./FooterElements"
+import { FooterText, FooterWrapper } from './FooterElements'
 
 const Footer = () => {
   return (
     <>
       <FooterWrapper>
-        <FooterText>
-          © Copyright Naman Parashar 2021.
-        </FooterText>
+        <FooterText>© Copyright Naman Parashar 2021.</FooterText>
       </FooterWrapper>
     </>
   )
