@@ -29,6 +29,7 @@ export const NavWrapper = styled.nav`
   @media (max-width: 1024px) {
     width: 10vw;
     background: ${backgroundDark};
+    animation-duration: 0.75s;
 
     &:hover,
     &:focus {

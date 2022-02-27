@@ -38,6 +38,7 @@ export const ProjectMainWrapper = styled.section`
     justify-content: end;
     /* justify-items: center; */
     align-items: center;
+    height: 100%;
     padding-left: 0;
   }
 `

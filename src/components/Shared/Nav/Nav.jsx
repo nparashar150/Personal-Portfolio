@@ -35,7 +35,7 @@ const Nav = () => {
 
   const showHide = {
     display: toggleNav ? 'block' : 'none',
-    transition: 'all 0.375s ease-in-out'
+    transition: 'all 0.175s ease-in-out'
   }
 
   return (
