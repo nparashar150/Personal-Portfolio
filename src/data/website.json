@@ -86,6 +86,12 @@
   {
     "data": [
       {
+        "name": "ACE Website",
+        "content": "ACE Website was a team project which was lead by me. Our Team created the website for ACE which the Technical Society of VIPS.",
+        "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/ACELogo.png",
+        "link": "https://vipsace.org/"
+      },
+      {
         "name": "Windows 11",
         "content": "Microsoft Windows 11 Mobile UI concept using Figma. A prototype on Google Pixel 2.",
         "image": "https://raw.githubusercontent.com/nparashar150/Personal-Portfolio/frontend/src/components/Projects/ProjectLogo/StartMenu.svg",
