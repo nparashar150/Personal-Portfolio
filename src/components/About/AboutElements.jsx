@@ -120,6 +120,7 @@ export const AboutImage = styled.img`
   height: 18rem;
   position: absolute;
   z-index: 5;
+  object-fit: cover;
 
   @media (max-width: 768px) {
     width: 75vw;
